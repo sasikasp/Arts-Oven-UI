@@ -16,7 +16,7 @@ To use Arts Oven UI in your project, follow these steps:
 1. Install via npm:
 
    ```bash
-   npm install artsovenui
+   npm i arts-oven-ui
 
 2. Include the library in your Tailwind CSS configuration:
 

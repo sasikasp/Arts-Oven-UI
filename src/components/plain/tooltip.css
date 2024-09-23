@@ -1,0 +1,64 @@
+.tooltip {
+    @apply relative w-fit;
+    &::after {
+        @apply px-4 py-0.5 absolute rounded-md w-max m-auto hidden;
+        content: attr(data-tooltip);
+        background-color: var(--tooltip-color, var(--color-text));
+        color: var(--tooltip-text, var(--color-base-100));
+
+        left: var(--tooltip-left, 50%);
+        right: var(--tooltip-right, auto);
+        top: var(--tooltip-top, auto);
+        bottom: var(--tooltip-bottom, calc(100% + .65rem));
+        transform: var(--tooltip-transform, translateX(-50%));
+    }
+    &::before {
+        content: "";
+        @apply absolute size-0 hidden;
+        border-color: var(--tooltip-border-color, var(--color-text) transparent transparent transparent);
+
+        left: var(--tooltip-arrow-left, 50%);
+        right: var(--tooltip-arrow-right, auto);
+        top: var(--tooltip-arrow-top, auto);
+        bottom: var(--tooltip-arrow-bottom, calc(96%));
+        transform: var(--tooltip-arrow-transform, translateX(-50%));
+        border-width: var(--tooltip-arrow-size, 6px);
+    }
+    &:hover::before, &:hover::after {
+        @apply block;
+    }
+    & {
+        &-bottom {
+            --tooltip-top: calc(100% + .65rem);
+            --tooltip-bottom: auto;
+            --tooltip-transform: translateX(-50%) translateY(0);
+            --tooltip-arrow-top: calc(97%);
+            --tooltip-arrow-bottom: auto;
+            --tooltip-arrow-transform: translateX(-50%);
+            --tooltip-border-color: transparent transparent var(--tooltip-color, var(--color-text)) transparent;
+        }
+        &-left {
+            --tooltip-left: auto;
+            --tooltip-bottom: calc(15%);
+            --tooltip-right: calc(100% + .75rem);
+            --tooltip-arrow-left: auto;
+            --tooltip-arrow-right: calc(100%);
+            --tooltip-arrow-bottom: calc(35%);
+            --tooltip-border-color: transparent transparent transparent var(--tooltip-color, var(--color-text));
+        }
+        &-right {
+            --tooltip-left: calc(100% + .75rem);
+            --tooltip-right: auto;
+            --tooltip-top: calc(12%);
+            --tooltip-bottom: auto;
+            --tooltip-arrow-left: calc(100%);
+            --tooltip-arrow-right: auto;
+            --tooltip-arrow-top: calc(35%);
+            --tooltip-border-color: transparent var(--tooltip-color, var(--color-text)) transparent transparent;
+        }
+        &-left, &-right {
+            --tooltip-transform: translateY(0%);
+            --tooltip-arrow-transform: translateY(0%);
+        }
+    }
+}

@@ -1,0 +1,7 @@
+.avatar-group {
+    @apply flex items-center;
+
+    & > .avatar > img {
+        @apply border border-base-100 border-4;
+    }
+}

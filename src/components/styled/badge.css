@@ -1,0 +1,30 @@
+.badge {
+    & {
+        background-color: var(--badge-color, var(--color-base-200));
+        color: var(--color-text, #ffffff);
+        &-primary {
+            --badge-color: var(--color-primary);
+            --color-text: white;
+        }
+        &-secondary {
+            --badge-color: var(--color-secondary);
+            --color-text: white;
+        }
+        &-info{
+            --badge-color: var(--color-info);
+            --color-text: white;
+        }
+        &-warning {
+            --badge-color: var(--color-warning);
+            --color-text: white;
+        }
+        &-success {
+            --badge-color: var(--color-success);
+            --color-text: white;
+        }
+        &-error {
+            --badge-color: var(--color-error);
+            --color-text: white;
+        }
+    }
+}

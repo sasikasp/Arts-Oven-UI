@@ -1,0 +1,26 @@
+.table {
+    @apply w-full;
+    thead {
+        @apply text-left;
+        th {
+            @apply py-4;
+        }
+        :where(th:first-child) {
+            @apply pl-4;
+        }
+        :where(th:last-child) {
+            @apply pr-4;
+        }
+    }
+    tbody {
+        td {
+            @apply py-4;
+        }
+        :where(td:first-child) {
+            @apply pl-4;
+        }
+        :where(td:last-child) {
+            @apply pr-4;
+        }
+    }
+}

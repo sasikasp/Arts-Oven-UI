@@ -1,0 +1,22 @@
+---
+import { useEffect } from 'react';
+
+const themes = ['light', 'dark'];
+
+const toggleTheme = () => {
+    const currentTheme = document.documentElement.getAttribute('theme') || 'light';
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    document.documentElement.setAttribute('theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    };
+
+useEffect(() => {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('theme', savedTheme);
+    }, []);
+
+---
+
+<button onClick={toggleTheme} class="theme-switcher">
+    Toggle Theme
+</button>

@@ -1,0 +1,59 @@
+.btn {
+    &{
+        box-shadow: 0 0 #0000;
+        @media (hover: hover) {
+            &:hover {
+                box-shadow: 0 25px 50px -12px var(--color-shadow, rgb(0 0 0 / 0.25));
+            }
+        }
+
+        &-primary{
+            --color-shadow: var(--color-primary);
+        }
+
+        &-outline-primary{
+            --color-shadow: var(--color-primary);
+        }
+
+        &-secondary {
+            --color-shadow: var(--color-secondary);
+        }
+
+        &-outline-secondary {
+            --color-shadow: var(--color-secondary);
+        }
+
+        &-info {
+            --color-shadow: var(--color-info);
+        }
+
+        &-outline-info {
+            --color-shadow: var(--color-info);
+        }
+
+
+        &-warning {
+            --color-shadow: var(--color-warning);
+        }
+
+        &-outline-warning {
+            --color-shadow: var(--color-warning);
+        }
+
+        &-success {
+            --color-shadow: var(--color-success);
+        }
+
+        &-outline-success {
+            --color-shadow: var(--color-success);
+        }
+
+        &-error {
+            --color-shadow: var(--color-error);
+        }
+
+        &-outline-error {
+            --color-shadow: var(--color-error);
+        }
+    }
+}

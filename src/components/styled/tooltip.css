@@ -1,0 +1,13 @@
+.tooltip {
+    & {
+        &-primary, &-secondary, &-info, &-warning, &-success, &-error {
+            --tooltip-text: white;
+        }
+        &-primary { --tooltip-color: var(--color-primary); }
+        &-secondary { --tooltip-color: var(--color-secondary); }
+        &-info { --tooltip-color: var(--color-info); }
+        &-warning { --tooltip-color: var(--color-warning); }
+        &-success { --tooltip-color: var(--color-success); }
+        &-error { --tooltip-color: var(--color-error); }
+    }
+}

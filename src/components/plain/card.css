@@ -1,0 +1,36 @@
+.card {
+    @apply rounded-lg shadow-xl;
+
+    :where(img:first-child) {
+        @apply rounded-t-lg;
+    }
+    :where(img:last-child) {
+        @apply rounded-b-lg;
+    }
+
+    .card-body {
+        @apply p-10;
+        .card-title {
+            @apply text-2xl font-semibold mb-4;
+        }
+        .card-footer {
+            @apply flex mt-6;
+        }
+    }
+}
+
+.card:has(.card-img-overlay) {
+    @apply relative overflow-hidden;
+
+    .img {
+        @apply size-full object-cover;
+    }
+
+    .card-img-overlay {
+        @apply absolute inset-0 bg-gradient-to-t from-black to-transparent flex items-end justify-center;
+    }
+    .card-body {
+        @apply text-white p-4;
+    }
+
+}

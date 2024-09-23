@@ -1,0 +1,40 @@
+.dropdown {
+    @apply relative inline-block;
+
+    .btn {
+        @apply inline-block list-none my-2;
+        /* Remove default arrow icon in the summary */
+        &::-webkit-details-marker {
+            @apply hidden;
+        }
+
+        &:focus + .dropdown-menu {
+            @apply block;
+        }
+    }
+
+    .dropdown-menu {
+        @apply absolute py-2 hidden min-w-full z-[1];
+        a {
+            @apply block p-2 no-underline;
+        }
+    }
+
+    &[open] .dropdown-menu,
+    &-hover:hover .dropdown-menu {
+        @apply block;
+    }
+
+    &-end .dropdown-menu {
+        @apply end-0;
+    }
+
+    &-top .dropdown-menu {
+        @apply bottom-full top-auto;
+    }
+
+    &-bottom .dropdown-menu {
+        @apply top-full bottom-auto;
+    }
+}
+

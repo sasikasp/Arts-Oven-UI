@@ -1,0 +1,42 @@
+.tabs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.tab-label {
+    display: inline-block;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #f1f5f9; /* Neutral background */
+    transition: background-color 0.3s ease;
+}
+
+.tab-label:hover {
+    background-color: #e2e8f0; /* Slightly darker on hover */
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.tab-content {
+    margin-top: 1rem;
+}
+
+.tab-panel {
+    display: none;
+    padding: 1rem;
+    border-top: 2px solid #cbd5e1; /* Border color */
+}
+
+#tab1:checked ~ .tab-content #content1,
+#tab2:checked ~ .tab-content #content2,
+#tab3:checked ~ .tab-content #content3 {
+    display: block;
+}
+
+input:checked + .tab-label {
+    background-color: #3b82f6; /* Active tab color */
+    color: white;
+}

@@ -1,0 +1,31 @@
+.collapse-box {
+    @apply my-2 relative;
+    input {
+        @apply absolute appearance-none opacity-0 size-full z-[1] cursor-pointer;
+    }
+    span:is(.collapse-label) {
+        @apply relative font-semibold inline-block w-full p-4;
+    }
+    .collapse-content {
+        @apply p-4;
+    }
+    summary:is(.collapse-label) {
+        @apply font-semibold p-4 cursor-pointer;
+    }
+    input:is(:checked) + span + div {
+        @apply block;
+    }
+}
+
+div:where(.collapse-box) .collapse-content {
+    @apply hidden;
+}
+
+summary {
+    list-style-type: none;
+    appearance: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}

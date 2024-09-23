@@ -1,0 +1,7 @@
+.avatar {
+    @apply relative aspect-square overflow-hidden;
+
+    img {
+        @apply size-full object-cover;
+    }
+}

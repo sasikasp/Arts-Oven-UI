@@ -1,0 +1,11 @@
+.progress {
+    @apply w-full h-2 rounded-full overflow-hidden;
+    & {
+        &::-webkit-progress-value {
+            @apply rounded-full;
+        }
+        &::-moz-progress-bar {
+            @apply rounded-full;
+        }
+    }
+}

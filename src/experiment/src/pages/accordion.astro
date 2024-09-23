@@ -1,0 +1,143 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles/styles.css"
+---
+
+<Layout title="Welcome to Astro.">
+    <main>
+        <div class="py-6">
+            <span>Change theme</span>
+            <div class="flex space-x-4">
+                <button data-set-theme="light" data-act-class="ACTIVECLASS">Light</button>
+                <button data-set-theme="dark" data-act-class="ACTIVECLASS">Dark</button>
+                <button data-set-theme="rose" data-act-class="ACTIVECLASS">Rose</button>
+            </div>
+        </div>
+
+        <h1>Welcome to <span class="text-gradient">Arts Oven UI</span></h1>
+        <h2 class="py-2 text-2xl">Buttons</h2>
+        <h3 class="py-2 text-lg">Solid Buttons</h3>
+
+        <div class="py-6">
+            <h3 class="py-2 text-lg">Dropdown hover</h3>
+            <div class="collapse-box">
+                <input type="radio" id="first" name="collapse-1"/>
+                <span class="collapse-label">Some text here</span>
+                <div class="collapse-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae
+                    consequatur, corporis debitis dolorem est eveniet id incidunt ipsum itaque iure nesciunt odio odit
+                    omnis porro quam sint tenetur ut.
+                </div>
+            </div>
+            <div class="collapse-box">
+                <input type="radio" id="two" name="collapse-1"/>
+                <span class="collapse-label">Some text here</span>
+                <div class="collapse-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae
+                    consequatur, corporis debitis dolorem est eveniet id incidunt ipsum itaque iure nesciunt odio odit
+                    omnis porro quam sint tenetur ut.
+                </div>
+            </div>
+            <div class="collapse-box">
+                <input type="radio" id="three" name="collapse-1"/>
+                <span class="collapse-label">Some text here</span>
+                <div class="collapse-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae
+                    consequatur, corporis debitis dolorem est eveniet id incidunt ipsum itaque iure nesciunt odio odit
+                    omnis porro quam sint tenetur ut.
+                </div>
+            </div>
+        </div>
+
+        <div class="py-6">
+            <h3 class="py-2 text-lg">Dropdown hover</h3>
+            <div class="collapse-box">
+                <input type="radio" name="collapse-2"/>
+                <span class="collapse-label">Some text here</span>
+                <div class="collapse-content bg-base-200 mx-4 mb-4 rounded-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae
+                    consequatur, corporis debitis dolorem est eveniet id incidunt ipsum itaque iure nesciunt odio odit
+                    omnis porro quam sint tenetur ut.
+                </div>
+            </div>
+            <div class="collapse-box">
+                <input type="radio" name="collapse-2"/>
+                <span class="collapse-label">Some text here</span>
+                <div class="collapse-content bg-base-200 mx-4 mb-4 rounded-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae
+                    consequatur, corporis debitis dolorem est eveniet id incidunt ipsum itaque iure nesciunt odio odit
+                    omnis porro quam sint tenetur ut.
+                </div>
+            </div>
+            <div class="collapse-box">
+                <input type="radio" name="collapse-2"/>
+                <span class="collapse-label">Some text here</span>
+                <div class="collapse-content bg-base-200 mx-4 mb-4 rounded-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae
+                    consequatur, corporis debitis dolorem est eveniet id incidunt ipsum itaque iure nesciunt odio odit
+                    omnis porro quam sint tenetur ut.
+                </div>
+            </div>
+        </div>
+
+    </main>
+</Layout>
+
+<style>
+    main {
+        margin: auto;
+        padding: 1rem;
+        width: 800px;
+        max-width: calc(100% - 2rem);
+        //color: white;
+        line-height: 1.6;
+    }
+
+    .astro-a {
+        position: absolute;
+        top: -32px;
+        left: 50%;
+        transform: translatex(-50%);
+        width: 220px;
+        height: auto;
+        z-index: -1;
+    }
+
+    h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .text-gradient {
+        background-image: var(--accent-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 400%;
+        background-position: 0%;
+    }
+
+    .instructions {
+        margin-bottom: 2rem;
+        border: 1px solid rgba(var(--accent-light), 25%);
+        background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+        padding: 1.5rem;
+        border-radius: 8px;
+    }
+
+    .instructions code {
+        font-size: 0.8em;
+        font-weight: bold;
+        background: rgba(var(--accent-light), 12%);
+        color: rgb(var(--accent-light));
+        border-radius: 4px;
+        padding: 0.3em 0.4em;
+    }
+
+    .instructions strong {
+        color: rgb(var(--accent-light));
+    }
+
+    .link-card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+        gap: 2rem;
+        padding: 0;
+    }
+</style>

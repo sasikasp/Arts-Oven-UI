@@ -1,0 +1,15 @@
+.collapse-box {
+    @apply border border-gray-500 rounded-lg;
+    .collapse-label {
+        &::after {
+            @apply right-5 block size-2 rotate-45 transition-all ease-out top-5 absolute;
+            content: "";
+            box-shadow: 2px 2px;
+            pointer-events: none;
+        }
+    }
+    &[open] > .collapse-label::after,
+    input:is(:checked) + .collapse-label::after {
+        @apply rotate-[225deg] translate-y-2;
+    }
+}

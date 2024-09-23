@@ -1,0 +1,23 @@
+
+.table {
+    thead {
+        @apply text-gray-400 uppercase tracking-wide border-b border-b-base-300;
+    }
+    tbody {
+        tr:not(:last-child) {
+            @apply border-b border-b-base-300;
+        }
+    }
+    & {
+        &-heading {
+            thead {
+                @apply bg-base-200;
+            }
+        }
+    }
+}
+.is-active,
+.is-hover > tbody > tr:hover,
+.is-zebra > tbody > tr:nth-child(2n+2) {
+    @apply bg-base-200;
+}

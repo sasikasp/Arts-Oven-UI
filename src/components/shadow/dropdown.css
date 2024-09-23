@@ -1,0 +1,5 @@
+.dropdown {
+    .dropdown-menu {
+        @apply shadow-xl;
+    }
+}

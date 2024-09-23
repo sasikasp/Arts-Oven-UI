@@ -1,0 +1,83 @@
+{
+  "name": "artsovenui",
+  "version": "1.0.5",
+  "description": "ArtsOven UI - Tailwind CSS Components",
+  "author": "Occy Mac",
+  "license": "MIT",
+  "homepage": "https://artsoven.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sasikaspsp/arts-oven-ui"
+  },
+  "bugs": {
+    "url": "https://github.com/sasikasp/arts-oven-ui/issues"
+  },
+  "keywords": [
+    "design-system",
+    "tailwindcss",
+    "components",
+    "component",
+    "component-library",
+    "components-library",
+    "ui-library",
+    "tailwind",
+    "artsoven",
+    "theming",
+    "postcss",
+    "css",
+    "ui",
+    "ui-kit"
+
+  ],
+  "main": "src/index.js",
+  "typings": "src/index.d.ts",
+  "types": "src/index.d.ts",
+  "files": [
+    "src/lib/*.js",
+    "dist/*.js",
+    "dist/components/{gradient,plain,shadow,styled}/*.css",
+    "src/index.js",
+    "src/build.js",
+    "src/theme/*.js",
+    "src/theming/js"
+  ],
+  "engines": {
+    "node": ">=16.9.0"
+  },
+  "browserslist": [
+    "> 7%"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "branches": [
+      "main"
+    ]
+  },
+  "scripts": {
+    "build:css": "node src/build",
+    "build:js": "rollup -c",
+    "build": "npm run build:css && npm run build:js && npm run experiment",
+    "watch:css": "postcss src/styles/tailwind.css -o dist/artsoven-ui.css --watch",
+    "watch:js": "rollup -c -w",
+    "watch": "npm run watch:css & npm run watch:js",
+    "experiment": "cd src/experiment && npm run dev",
+    "link": "npm run build & npm link"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.0",
+    "cssnano": "^7.0.5",
+    "postcss": "^8.0.0",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^16.1.0",
+    "rollup": "^2.0.0",
+    "rollup-plugin-postcss": "^4.0.0",
+    "tailwindcss": "^3.4.4"
+  },
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "picocolors": "^1.0.1",
+    "prejss-cli": "^0.3.3",
+    "tailwind": "^4.0.0"
+  }
+}

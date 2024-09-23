@@ -1,0 +1,31 @@
+.progress {
+    & {
+        &::-webkit-progress-bar {
+            background-color: var(--color-base-300, lightgray) /* For background color */
+        }
+        &::-webkit-progress-value {
+            background-color: var(--progress-color, slategray) /* For progress color */
+        }
+        &::-moz-progress-bar {
+            background-color: var(--progress-color, slategray) /* For progress color */
+        }
+        &-primary {
+            --progress-color: var(--color-primary);
+        }
+        &-secondary {
+            --progress-color: var(--color-secondary);
+        }
+        &-info {
+            --progress-color: var(--color-info);
+        }
+        &-warning {
+            --progress-color: var(--color-warning);
+        }
+        &-success {
+            --progress-color: var(--color-success);
+        }
+        &-error{
+            --progress-color: var(--color-error);
+        }
+    }
+}

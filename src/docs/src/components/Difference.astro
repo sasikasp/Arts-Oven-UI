@@ -1,0 +1,140 @@
+---
+import { Image } from 'astro:assets';
+import logoImage from '../assets/logo.svg';
+---
+
+<section class="w-full z-10">
+    <div class="grid md:grid-cols-2 sm:grid-cols-1 gap-6 items-center">
+        <div class="w-full">
+            <h2 class="text-5xl font-semibold mb-10 text-left">Stop Writing 100 of Class Names</h2>
+            <h3 class="text-2xl mb-10 bg-gradient-to-r from-primary to-orange-300 inline-block text-transparent bg-clip-text">Power of ArtsOven</h3>
+            <p class="max-w-4xl text-left text-lg mx-auto">With ArtsOvenUI, you're provided with a library of pre-designed components
+                that can be easily customized and reused, drastically reducing development time.</p>
+
+        </div>
+            <div class="bg-gradient-to-br from-card-light to-card-light rounded-xl border border-border-light">
+            <div class="bg-card-soft-light p-4 rounded-t-xl">
+                <span class="text-xl" id="cardTitle"></span>
+            </div>
+            <div class="p-4">
+                <pre class="whitespace-pre-wrap">
+                    <code style="background: transparent !important;">&lt;button class=&quot;<span class="text-primary" id="codeDisplay"></span>&quot;&gt;Confirm&lt;/button&gt;</code>
+                </pre>
+                <div class="text-center w-full">
+                    <!--<button class="bg-primary text-white font-semibold px-6 py-2 rounded-xl hover:bg-orange-700 focus:bg-orange-800 focus:outline-none focus:ring-0 inline-block active:bg-orange-500 transition duration-150 ease-in-out motion-reduce:transition-none shadow-xl text-center">-->
+                    <!--    Confirm-->
+                    <!--</button>-->
+                    <button id="button">Example</button>
+                </div>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-6 w-full mt-10">
+
+    </div>
+</section>
+
+<script client:load>
+    // Helper function to load a script dynamically
+    function loadScript(src) {
+        return new Promise((resolve, reject) => {
+            const script = document.createElement('script');
+            script.src = src;
+            script.onload = resolve;
+            script.onerror = reject;
+            document.body.appendChild(script);
+        });
+    }
+
+    // Function to clear the text one character at a time
+    function clearText(element, fullText, scrollPercentage, elementButton) {
+        const totalChars = fullText.length;
+        const charsToShow = Math.floor((scrollPercentage / 100) * totalChars);
+        element.innerHTML = fullText.substring(0, totalChars - charsToShow);
+        elementButton.classList = fullText.substring(0, totalChars - charsToShow);
+    }
+
+    // Function to type new text based on scroll
+    function typeNewClasses(element, newText, scrollPercentage) {
+        const totalChars = newText.length;
+        const charsToShow = Math.floor((scrollPercentage / 100) * totalChars);
+        element.classList = newText.substring(0, charsToShow);
+    }
+
+    document.addEventListener('DOMContentLoaded', async () => {
+        try {
+            // Load the main ScrollMagic script
+            await loadScript('https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js');
+            await loadScript('https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js');
+
+            const controller = new ScrollMagic.Controller();
+            const codeDisplay = document.getElementById('codeDisplay');
+            const button = document.getElementById('button');
+            const cardTitle = document.getElementById('cardTitle');
+            const fullText = 'bg-primary text-white font-semibold px-6 py-2 rounded-xl hover:bg-orange-700 focus:bg-orange-800 focus:outline-none focus:ring-0 inline-block active:bg-orange-500 transition duration-150 ease-in-out motion-reduce:transition-none shadow-xl text-center'; // Full text to clear
+            const newText = 'btn btn-primary'; // New text to type after clearing
+
+            // Create a ScrollMagic scene
+            const scene = new ScrollMagic.Scene({
+                triggerElement: '#differenceSection',
+                triggerHook: 0,
+                duration: document.querySelector('#differenceSection').offsetHeight
+            })
+                .on('progress', (event) => {
+                    const scrollPercentage = Math.round(event.progress * 150);
+                    console.log(scrollPercentage);
+                    if (scrollPercentage < 100) {
+                        // Clear current text
+                        clearText(codeDisplay, fullText, scrollPercentage + 3, button);
+                        cardTitle.innerHTML = "Tailwind Direct";
+                        codeDisplay.classList.remove("text-lime-400");
+                        codeDisplay.classList.add("text-primary");
+                    }
+
+                    if (scrollPercentage >= 100) {
+                        codeDisplay.innerHTML = newText.substring(0, scrollPercentage - 100);
+                        typeNewClasses(button, fullText, scrollPercentage - 100);
+                        codeDisplay.classList.remove("text-primary");
+                        codeDisplay.classList.add("text-lime-400");
+                        cardTitle.innerHTML = "Arts Oven UI";
+                    }
+                })
+                .setPin('#differenceSection')  // Pin the section during scroll
+                .addTo(controller);
+
+            const showcaseScene = new ScrollMagic.Scene({
+                triggerElement: '#showcaseSection',
+                triggerHook: 0,
+                duration: document.querySelector('#differenceSection').offsetHeight
+            })
+                .on('progress', (event) => {
+                    const scrollPercentage = Math.round(event.progress * 150);
+                    console.log(scrollPercentage);
+                    if (scrollPercentage < 100) {
+                        // Clear current text
+                        clearText(codeDisplay, fullText, scrollPercentage + 3, button);
+                        cardTitle.innerHTML = "Tailwind Direct";
+                        codeDisplay.classList.remove("text-lime-400");
+                        codeDisplay.classList.add("text-primary");
+                    }
+
+                    if (scrollPercentage >= 100) {
+                        codeDisplay.innerHTML = newText.substring(0, scrollPercentage - 100);
+                        typeNewClasses(button, fullText, scrollPercentage - 100);
+                        codeDisplay.classList.remove("text-primary");
+                        codeDisplay.classList.add("text-lime-400");
+                        cardTitle.innerHTML = "Arts Oven UI";
+                    }
+                })
+                .setPin('#showcaseSection')  // Pin the section during scroll
+                .addTo(controller);
+
+        } catch (error) {
+            console.error('Failed to load scripts:', error);
+        }
+    });
+</script>

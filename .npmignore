@@ -21,3 +21,5 @@ temp/
 # Miscellaneous
 *.yml
 *.yaml
+/src/docs/
+/src/experiment/

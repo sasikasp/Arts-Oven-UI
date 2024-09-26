@@ -19,24 +19,86 @@ import "../styles/styles.css"
         <h3 class="py-2 text-lg">Solid Buttons</h3>
 
         <div class="py-6">
-            <h3 class="py-2 text-lg">Regular Table</h3>
+            <h3 class="py-2 text-lg">Tabs</h3>
 
-            <div class="tabs">
-                <div class="flex justify-between gap-4">
-                    <input type="radio" name="tabs" id="tab1" checked>
-                    <label for="tab1" class="tab-label">Tab 1</label>
+            <div class="tabs" role="tablist">
+                <button class="tab" aria-controls="panel-1" id="tab-1" tabindex="0">
+                    First Tab
+                </button>
+                <button class="tab active" aria-controls="panel-2" id="tab-2" tabindex="-1">
+                    Second Tab
+                </button>
+                <button class="tab" aria-controls="panel-3" id="tab-3" tabindex="-1">
+                    Third Tab
+                </button>
+            </div>
 
-                    <input type="radio" name="tabs" id="tab2">
-                    <label for="tab2" class="tab-label">Tab 2</label>
+        </div>
 
-                    <input type="radio" name="tabs" id="tab3">
-                    <label for="tab3" class="tab-label">Tab 3</label>
-                </div>
-                <div class="tab-content">
-                    <div class="tab-panel" id="content1">Content for Tab 1</div>
-                    <div class="tab-panel" id="content2">Content for Tab 2</div>
-                    <div class="tab-panel" id="content3">Content for Tab 3</div>
-                </div>
+        <div class="py-6">
+            <h3 class="py-2 text-lg">Tabs bordered</h3>
+
+            <div class="tabs tabs-border" role="tablist">
+                <button class="tab" aria-controls="panel-1" id="tab-1" tabindex="0">
+                    First Tab
+                </button>
+                <button class="tab active" aria-controls="panel-2" id="tab-2" tabindex="-1">
+                    Second Tab
+                </button>
+                <button class="tab" aria-controls="panel-3" id="tab-3" tabindex="-1">
+                    Third Tab
+                </button>
+            </div>
+
+        </div>
+
+        <div class="py-6">
+            <h3 class="py-2 text-lg">Tabs buttoned</h3>
+
+            <div class="tabs tabs-button" role="tablist">
+                <button class="tab" aria-controls="panel-1" id="tab-1" tabindex="0">
+                    First Tab
+                </button>
+                <button class="tab active" aria-controls="panel-2" id="tab-2" tabindex="-1">
+                    Second Tab
+                </button>
+                <button class="tab" aria-controls="panel-3" id="tab-3" tabindex="-1">
+                    Third Tab
+                </button>
+            </div>
+
+        </div>
+
+        <div class="py-6">
+            <h3 class="py-2 text-lg">Tabs Uplift</h3>
+
+            <div class="tabs tabs-uplift" role="tablist">
+                <button class="tab" aria-controls="panel-1" id="tab-1" tabindex="0">
+                    First Tab
+                </button>
+                <button class="tab active" aria-controls="panel-2" id="tab-2" tabindex="-1">
+                    Second Tab
+                </button>
+                <button class="tab" aria-controls="panel-3" id="tab-3" tabindex="-1">
+                    Third Tab
+                </button>
+            </div>
+
+        </div>
+
+        <div class="py-6">
+            <h3 class="py-2 text-lg">Tabs Box</h3>
+
+            <div class="tabs tabs-box" role="tablist">
+                <button class="tab" aria-controls="panel-1" id="tab-1" tabindex="0">
+                    First Tab
+                </button>
+                <button class="tab active" aria-controls="panel-2" id="tab-2" tabindex="-1">
+                    Second Tab
+                </button>
+                <button class="tab" aria-controls="panel-3" id="tab-3" tabindex="-1">
+                    Third Tab
+                </button>
             </div>
 
         </div>

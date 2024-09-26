@@ -17,7 +17,7 @@ module.exports = {
     },
     dark: {
         colorScheme: 'dark',
-        primaryColor: colors.blue[600],
+        primaryColor: '#ee2281',
         secondaryColor: colors.gray[600],
         infoColor: colors.sky[600],
         warningColor: colors.yellow[600],

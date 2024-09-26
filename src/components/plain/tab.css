@@ -1,0 +1,35 @@
+.tabs {
+    @apply flex;
+
+    .tab {
+        @apply px-6 py-2;
+    }
+
+    &-border .tab {
+        @apply border-b;
+    }
+
+    &-border .tab.active {
+        @apply border-b-2 border-[currentColor];
+    }
+
+    &-button .tab.active {
+        @apply bg-base-200 rounded-xl;
+    }
+
+    &-uplift .tab {
+        @apply border-b border-[currentColor];
+    }
+
+    &-uplift .tab.active {
+        @apply border-b-0 border border-[currentColor];
+    }
+
+    &-box {
+        @apply bg-base-200 rounded-xl p-1 w-fit;
+    }
+
+    &-box .tab.active {
+        @apply bg-slate-600 text-white rounded-xl;
+    }
+}

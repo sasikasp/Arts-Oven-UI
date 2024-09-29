@@ -61,7 +61,11 @@
     "watch": "npm run watch:css & npm run watch:js",
     "docs": "cd src/docs && npm run dev",
     "experiment": "cd src/experiment && npm run dev",
-    "link": "npm run build & npm link"
+    "release:patch": "node src/release.js --patch",
+    "release:minor": "node src/release.js --minor",
+    "release:major": "node src/release.js --major",
+    "release:premajor": "node src/release.js --premajor",
+    "release:prerelease": "node src/release.js --prerelease"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",

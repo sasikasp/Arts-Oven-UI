@@ -1,0 +1,18 @@
+.form-input {
+    @apply px-4 py-2
+    border border-slate-300 rounded-xl
+    focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500
+    placeholder-slate-400 text-sm sm:text-base
+    w-full appearance-none bg-transparent;
+}
+
+/* Hide the input field */
+.form-file input[type="file"] {
+    @apply absolute size-0.5 overflow-hidden border-0;
+    clip: rect(0, 0, 0, 0);
+}
+
+/* Style the label as a button */
+.form-file {
+    @apply inline-flex gap-2 px-4 py-2 bg-secondary text-white rounded-xl cursor-pointer;
+}

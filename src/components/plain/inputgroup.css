@@ -1,0 +1,23 @@
+.input-group {
+    @apply inline-flex;
+
+    span:is(:first-child) {
+        @apply px-4 py-2 border border-slate-300 border-r-0 rounded-l-xl;
+    }
+    .form-input:is(:last-child) {
+        @apply rounded-l-none;
+    }
+    .form-input:is(:first-child) {
+        @apply rounded-r-none;
+    }
+    span:is(:last-child) {
+        @apply px-4 py-2 border border-slate-300 border-l-0 rounded-r-xl;
+    }
+    .form-input:not(:first-child):not(:last-child) {
+        @apply rounded-none;
+    }
+
+    .btn:is(:last-child) {
+        @apply rounded-r-xl border border-slate-300 border-l-0 rounded-l-none;
+    }
+}

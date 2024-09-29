@@ -1,0 +1,19 @@
+.breadcrumb {
+    @apply flex space-x-1;
+
+    .breadcrumb-item {
+        a {
+            @apply underline underline-offset-4 text-blue-500;
+        }
+
+        &:not(:last-child)::after {
+            @apply mx-1;
+            content: var(--breadcrumb-icon, "-");
+        }
+
+        &:is(.active) a {
+            @apply text-slate-600 no-underline;
+        }
+    }
+}
+

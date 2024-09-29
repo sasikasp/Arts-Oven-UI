@@ -1,0 +1,7 @@
+.form-group {
+    @apply grid grid-cols-2 gap-4;
+}
+
+.form-label {
+    @apply block pl-4 text-sm;
+}

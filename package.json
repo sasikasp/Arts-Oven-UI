@@ -55,10 +55,11 @@
   "scripts": {
     "build:css": "node src/build",
     "build:js": "rollup -c --bundleConfigAsCjs",
-    "build": "npm run build:css && npm run build:js && npm run experiment",
+    "build": "npm run build:css && npm run build:js",
     "watch:css": "postcss src/styles/tailwind.css -o dist/artsoven-ui.css --watch",
     "watch:js": "rollup -c -w",
     "watch": "npm run watch:css & npm run watch:js",
+    "docs": "cd src/docs && npm run dev",
     "experiment": "cd src/experiment && npm run dev",
     "link": "npm run build & npm link"
   },

@@ -1,0 +1,21 @@
+.navbar {
+    @apply bg-gray-800 px-4;
+
+    div {
+        @apply flex justify-between items-center py-4;
+    }
+
+    .branding-logo {
+        @apply text-lg font-semibold text-white;
+    }
+
+    ul {
+        @apply flex;
+
+        li {
+            .nav-link {
+                @apply cursor-pointer py-1 px-4 inline-block hover:bg-slate-900 rounded-xl text-white hover:text-gray-400;
+            }
+        }
+    }
+}

@@ -2,22 +2,38 @@
     @apply inline-flex;
 
     span:is(:first-child) {
-        @apply px-4 py-2 border border-slate-300 border-r-0 rounded-l-xl;
+        padding: var(--input-padding-y, .5rem) var(--input-padding-x, 1rem);
+        background-color: var(--input-background-color, transparent);
+        border-radius: var(--input-border-radius, var(--btn-border-radius, var(--border-radius, 0.75rem))) 0 0 var(--input-border-radius, var(--btn-border-radius, var(--border-radius, 0.75rem)));
+        border: var(--input-border-width, 1px)
+            solid
+            var(--input-border-color, var(--color-border, #cccccc));
+        @apply border-r-0
     }
     .form-input:is(:last-child) {
-        @apply rounded-l-none;
+        @apply rounded-l-none
     }
     .form-input:is(:first-child) {
-        @apply rounded-r-none;
+        @apply rounded-r-none
     }
     span:is(:last-child) {
-        @apply px-4 py-2 border border-slate-300 border-l-0 rounded-r-xl;
+        padding: var(--input-padding-y, .5rem) var(--input-padding-x, 1rem);
+        background-color: var(--input-background-color, transparent);
+        border-radius: 0 var(--input-border-radius, var(--btn-border-radius, var(--border-radius, 0.75rem))) var(--input-border-radius, var(--btn-border-radius, var(--border-radius, 0.75rem))) 0;
+        border: var(--input-border-width, 1px)
+            solid
+            var(--input-border-color, var(--color-border, #cccccc));
+        @apply border-l-0
     }
     .form-input:not(:first-child):not(:last-child) {
-        @apply rounded-none;
+        @apply rounded-none
     }
 
     .btn:is(:last-child) {
-        @apply rounded-r-xl border border-slate-300 border-l-0 rounded-l-none;
+        border: var(--input-border-width, 1px)
+        solid
+        var(--input-border-color, var(--color-border, #cccccc));
+        border-radius: 0 var(--input-border-radius, var(--btn-border-radius, var(--border-radius, 0.75rem))) var(--input-border-radius, var(--btn-border-radius, var(--border-radius, 0.75rem))) 0;
+        @apply border-l-0
     }
 }

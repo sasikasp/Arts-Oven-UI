@@ -18,25 +18,31 @@ const getUserThemes = (config) => {
 
 const rootStyles = {
     ':root': {
-        '--color-primary': '#00ff66',
-        '--color-secondary': '#2e363a',
-        '--color-info': '#24b5ff',
-        '--color-warning': '#ffcf00',
-        '--color-success': '#00ff66',
-        '--color-error': '#ff2626',
+        '--color-primary': '#0D181C',
+        '--color-secondary': '#E75F63',
+        '--color-accent': '#C95EE6',
+        '--color-info': '#27A7E6',
+        '--color-warning': '#F0B22D',
+        '--color-success': '#39BC52',
+        '--color-error': '#EF4C50',
+
+        '--color-background': '#F6F6F6',
+        '--color-foreground': '#0D181C',
+
+        '--color-base-100': '#FFFFFF',
+        '--color-base-200': '#F0F5F9',
+        '--color-base-300': '#CADAEA',
+
+        '--color-text': '#0D181C',
+        '--color-text-inverse': '#FFFFFF',
 
         '--border-radius': '0.375rem',
-
-        '--color-base-100': '#ffffff',
-        '--color-base-200': '#f1f5f9',
-        '--color-base-300': '#e2e8f0',
-
-        '--color-text': '#000000',
-        '--color-default': '#ffffff',
+        '--btn-border-radius': '10px',
+        '--border-width': '1px',
     },
 
     '[data-theme]': {
-        'background-color': 'var(--color-base-100, #ffffff)',
+        'background-color': 'var(--color-background, #ffffff)',
         'color': 'var(--color-text, #000000)',
     },
 
@@ -50,25 +56,29 @@ const generateThemeStyles = (config) => {
         const theme = themes[themeName];
         if (!theme) return acc;
 
-        const colorText = theme.colorScheme === "light" ? theme.colorDark : theme.colorLight;
-        const colorDefault = theme.colorScheme === "light" ? theme.colorLight : theme.colorDark;
-
         acc[`[data-theme="${themeName}"]`] = {
             '--color-primary': theme.primaryColor || rootStyles[':root']['--color-primary'],
             '--color-secondary': theme.secondaryColor || rootStyles[':root']['--color-secondary'],
+            '--color-accent': theme.accentColor || rootStyles[':root']['--color-accent'],
             '--color-info': theme.infoColor || rootStyles[':root']['--color-info'],
             '--color-warning': theme.warningColor || rootStyles[':root']['--color-warning'],
             '--color-success': theme.successColor || rootStyles[':root']['--color-success'],
             '--color-error': theme.errorColor || rootStyles[':root']['--color-error'],
 
-            '--border-radius': theme.borderRadius || rootStyles[':root']['--border-radius'],
-
             '--color-base-100': theme.baseColor100 || rootStyles[':root']['--color-base-100'],
             '--color-base-200': theme.baseColor200 || rootStyles[':root']['--color-base-200'],
             '--color-base-300': theme.baseColor300 || rootStyles[':root']['--color-base-300'],
 
-            '--color-text': colorText || rootStyles[':root']['--color-text'],
-            '--color-default': colorDefault || rootStyles[':root']['--color-text'],
+            '--color-background': theme.backgroundColor || rootStyles[':root']['--color-background'],
+            '--color-foreground': theme.foregroundColor || rootStyles[':root']['--color-foreground'],
+
+            '--color-text': theme.colorText || rootStyles[':root']['--color-text'],
+            '--color-text-inverse': theme.colorTextInverse || rootStyles[':root']['--color-text-inverse'],
+
+            '--border-radius': theme.borderRadius || rootStyles[':root']['--border-radius'],
+            '--btn-border-radius': theme.btnBorderRadius || rootStyles[':root']['--btn-border-radius'],
+            '--border-width': theme.borderWidth || rootStyles[':root']['--border-width'],
+            '--color-border': theme.borderColor || rootStyles[':root']['--color-border'],
         };
         return acc;
     }, {});

@@ -4,27 +4,27 @@
         color: var(--color-text, #ffffff);
         &-primary {
             --badge-color: var(--color-primary);
-            --color-text: white;
+            --color-text: var(--badge-primary-text-color, #FFFFFF);
         }
         &-secondary {
             --badge-color: var(--color-secondary);
-            --color-text: white;
+            --color-text: var(--badge-secondary-text-color, #FFFFFF);
         }
         &-info{
             --badge-color: var(--color-info);
-            --color-text: white;
+            --color-text: var(--badge-info-text-color, #FFFFFF);
         }
         &-warning {
             --badge-color: var(--color-warning);
-            --color-text: white;
+            --color-text: var(--badge-warning-text-color, #FFFFFF);
         }
         &-success {
             --badge-color: var(--color-success);
-            --color-text: white;
+            --color-text: var(--badge-success-text-color, #FFFFFF);
         }
         &-error {
             --badge-color: var(--color-error);
-            --color-text: white;
+            --color-text: var(--badge-error-text-color, #FFFFFF);
         }
     }
 }

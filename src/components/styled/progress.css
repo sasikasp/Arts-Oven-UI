@@ -1,13 +1,13 @@
 .progress {
     & {
         &::-webkit-progress-bar {
-            background-color: var(--color-base-300, lightgray) /* For background color */
+            background-color: var(--progress-bg-color, var(--color-base-100, lightgray))
         }
         &::-webkit-progress-value {
-            background-color: var(--progress-color, slategray) /* For progress color */
+            background-color: var(--progress-color, slategray)
         }
         &::-moz-progress-bar {
-            background-color: var(--progress-color, slategray) /* For progress color */
+            background-color: var(--progress-color, slategray)
         }
         &-primary {
             --progress-color: var(--color-primary);

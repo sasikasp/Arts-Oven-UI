@@ -9,7 +9,7 @@ export default {
 	],
 	artsovenui: {
 	   logs: true,
-		themes: ['dark', 'light', 'rose'],
+		themes: ['dark', 'light', 'marble'],
 		shadow: true,
 		gradient: true,
 	},

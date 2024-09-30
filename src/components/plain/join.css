@@ -1,10 +1,3 @@
 .join {
-    @apply inline-flex;
-    .join-item:is(:first-child) {
-        @apply rounded-l-xl;
-    }
-
-    .join-item:is(:last-child) {
-        @apply rounded-r-xl;
-    }
+    @apply inline-flex space-x-2;
 }

@@ -1,5 +1,9 @@
 .form-switch {
-    @apply relative appearance-none rounded-full h-6 w-10 bg-primary cursor-pointer;
+    @apply relative appearance-none rounded-full h-6 w-10 bg-base-300 cursor-pointer;
+
+    &:checked {
+        @apply bg-primary;
+    }
 }
 
 .form-switch:before {

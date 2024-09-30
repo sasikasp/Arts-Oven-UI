@@ -1,5 +1,6 @@
 .collapse-box {
-    @apply border border-gray-500 rounded-lg;
+    @apply border rounded-lg;
+    border-color: var(--color-border, #f1f1f1);
     .collapse-label {
         &::after {
             @apply right-5 block size-2 rotate-45 transition-all ease-out top-5 absolute;

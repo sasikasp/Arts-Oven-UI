@@ -1,17 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "../styles/styles.css"
+import ThemeSwitcher from "../components/ThemeSwitcher.astro";
 ---
 
 <Layout title="Welcome to Astro.">
     <main>
         <div class="py-6">
             <span>Change theme</span>
-            <div class="flex space-x-4">
-                <button data-set-theme="light" data-act-class="ACTIVECLASS">Light</button>
-                <button data-set-theme="dark" data-act-class="ACTIVECLASS">Dark</button>
-                <button data-set-theme="rose" data-act-class="ACTIVECLASS">Rose</button>
-            </div>
+            <ThemeSwitcher/>
         </div>
 
         <h1>Welcome to <span class="text-gradient">Arts Oven UI</span></h1>

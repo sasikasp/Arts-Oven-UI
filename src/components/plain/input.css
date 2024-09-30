@@ -1,9 +1,12 @@
 .form-input {
-    @apply px-4 py-2
-    border border-slate-300 rounded-xl
-    focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500
-    placeholder-slate-400 text-sm sm:text-base
-    w-full appearance-none bg-transparent;
+    @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500
+    placeholder-slate-400 text-sm sm:text-base w-full appearance-none;
+    padding: var(--input-padding-y, .5rem) var(--input-padding-x, 1rem);
+    border-radius: var(--input-border-radius, var(--btn-border-radius, var(--border-radius, 0.75rem)));
+    border: var(--input-border-width, 1px)
+            solid
+            var(--input-border-color, var(--color-border, #cccccc));
+    background-color: var(--input-background-color, transparent);
 }
 
 /* Hide the input field */

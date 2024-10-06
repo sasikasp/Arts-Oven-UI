@@ -1,0 +1,30 @@
+---
+import {document} from "postcss";
+const themes = ['light', 'dark', 'marble'];
+---
+
+<!-- Theme Selector -->
+<select id="theme-select">
+    {themes.map((theme) => (
+            <option value={theme} selected={}>{theme.charAt(0).toUpperCase() + theme.slice(1)}</option>
+    ))}
+</select>
+
+<script>
+    // Function to handle theme changes
+    function handleThemeChange(event) {
+        const selectedTheme = event.target.value;
+        document.documentElement.setAttribute('data-theme', selectedTheme); // Update the data-theme attribute
+        localStorage.setItem('selected-theme', selectedTheme); // Store the user's selection in local storage
+    }
+
+    // Check if the script is running in the browser
+    if (typeof window !== 'undefined') {
+        // On page load, set the stored theme if it exists
+        const storedTheme = localStorage.getItem('selected-theme') || 'light'; // Default to light theme
+        document.documentElement.setAttribute('data-theme', storedTheme);
+
+        // Add event listener to the select element
+        document.getElementById('theme-select').addEventListener('change', handleThemeChange);
+    }
+</script>

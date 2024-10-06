@@ -15,7 +15,7 @@
     "@astrojs/starlight": "^0.28.2",
     "@astrojs/tailwind": "^5.1.1",
     "@heroicons/react": "^2.1.5",
-    "artsovenui": "^1.0.6",
+    "artsovenui": "^1.0.10",
     "astro": "^4.15.3",
     "sharp": "^0.32.5",
     "tailwindcss": "^3.4.13"

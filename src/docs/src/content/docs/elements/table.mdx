@@ -1,0 +1,63 @@
+---
+title: Table
+description: Table Component Documentation
+---
+
+import {Tabs, TabItem, Card} from '@astrojs/starlight/components';
+
+The Alert component in the Arts Oven UI Component Library is designed to provide contextual feedback to users through brief messages. Alerts are an effective way to communicate important information without interrupting the user's workflow.
+
+### Table
+
+<Card>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Country</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>johndoe@example.com</td>
+            <td>(123) 456-7890</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Jane Smith</td>
+            <td>janesmith@example.com</td>
+            <td>(098) 765-4321</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Sam Wilson</td>
+            <td>samwilson@example.com</td>
+            <td>(111) 222-3333</td>
+            <td>Canada</td>
+        </tr>
+        </tbody>
+    </table>
+</Card>
+
+## Adding Shadows and Gradients
+
+You can enhance your buttons with shadows and gradients by enabling these features in your `tailwind.config` configuration:
+
+```js {2-3}
+artsovenui: {
+    shadow: true,
+    gradients: true,
+},
+```
+
+## Conclusion
+
+The Buttons component in the Arts Oven UI Component Library provides a flexible and easy-to-use solution for creating interactive elements in your applications. Explore the various styles and customization options to create buttons that fit your design needs perfectly! For more components and detailed documentation, refer to our main documentation page.
+

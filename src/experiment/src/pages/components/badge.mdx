@@ -1,0 +1,222 @@
+---
+layout: ../../layouts/docLayout.astro
+title: Badge
+description: Badge Component Documentation
+---
+
+import Card from '../../components/Card.astro'
+import TabItem from '../../components/TabItem.astro'
+import Tabs from '../../components/Tabs.astro'
+
+The Badge component in the Arts Oven UI Component Library is designed to display small bits of information, such as notifications, statuses, or labels. Badges can enhance user interfaces by providing contextual information that is visually distinct and easy to interpret.
+
+### Badge
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="text-center">
+                <span class="badge">Default</span>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <span class="badge">Default</span>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <span className="badge">Default</span>
+        ````
+    </TabItem>
+</Tabs>
+
+### Badge Branding
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex gap-4 justify-center text-center">
+                <span class="badge badge-primary">Primary</span>
+                <span class="badge badge-secondary">Secondary</span>
+                <span class="badge badge-info">Info</span>
+                <span class="badge badge-warning">Warning</span>
+                <span class="badge badge-success">Success</span>
+                <span class="badge badge-error">Error</span>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <!-- Primary badge-->
+        <span class="badge badge-primary">Primary</span>
+        ````
+        ````xml
+        <!-- Secondary badge-->
+        <span class="badge badge-secondary">Secondary</span>
+        ````
+        ````xml
+        <!-- Info badge-->
+        <span class="badge badge-info">Info</span>
+        ````
+        ````xml
+        <!-- Warning badge-->
+        <span class="badge badge-warning">Warning</span>
+        ````
+        ````xml
+        <!-- Success badge-->
+        <span class="badge badge-success">Success</span>
+        ````
+        ````xml
+        <!-- Error badge-->
+        <span class="badge badge-error">Error</span>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <!-- Primary badge-->
+        <span className="badge badge-primary">Primary</span>
+        ````
+        ````xml
+        <!-- Secondary badge-->
+        <span className="badge badge-secondary">Secondary</span>
+        ````
+        ````xml
+        <!-- Info badge-->
+        <span className="badge badge-info">Info</span>
+        ````
+        ````xml
+        <!-- Warning badge-->
+        <span className="badge badge-warning">Warning</span>
+        ````
+        ````xml
+        <!-- Success badge-->
+        <span className="badge badge-success">Success</span>
+        ````
+        ````xml
+        <!-- Error badge-->
+        <span className="badge badge-error">Error</span>
+        ````
+    </TabItem>
+</Tabs>
+
+### Badge Sizes
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex gap-4 justify-center items-center text-center">
+                <span class="badge badge-xs">Extra Small</span>
+                <span class="badge badge-primary">Normal</span>
+                <span class="badge badge-secondary badge-md">Medium</span>
+                <span class="badge badge-info badge-lg">Large</span>
+                <span class="badge badge-warning badge-xl">Extra Large</span>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <!-- Xs Size badge-->
+        <span class="badge badge-xs">Extra Small</span>
+        ````
+        ````xml
+        <!-- Normal Size badge-->
+        <span class="badge badge-primary">Normal</span>
+        ````
+        ````xml
+        <!-- Medium Size badge-->
+        <span class="badge badge-secondary badge-md">Medium</span>
+        ````
+        ````xml
+        <!-- Large Size badge-->
+        <span class="badge badge-info badge-lg">Large</span>
+        ````
+        ````xml
+        <!-- XL Size badge-->
+        <span class="badge badge-warning badge-xl">Extra Large</span>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <!-- Xs Size badge-->
+        <span className="badge badge-xs">Extra Small</span>
+        ````
+        ````xml
+        <!-- Normal Size badge-->
+        <span className="badge badge-primary">Normal</span>
+        ````
+        ````xml
+        <!-- Medium Size badge-->
+        <span className="badge badge-secondary badge-md">Medium</span>
+        ````
+        ````xml
+        <!-- Large Size badge-->
+        <span className="badge badge-info badge-lg">Large</span>
+        ````
+        ````xml
+        <!-- XL Size badge-->
+        <span className="badge badge-warning badge-xl">Extra Large</span>
+        ````
+    </TabItem>
+</Tabs>
+
+### Empty Badge
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex gap-4 justify-center items-center text-center">
+                <span class="badge badge-primary badge-xs"></span>
+                <span class="badge badge-primary"></span>
+                <span class="badge badge-primary badge-md"></span>
+                <span class="badge badge-primary badge-lg"></span>
+                <span class="badge badge-primary badge-xl"></span>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <!-- Xs Size badge-->
+        <span class="badge badge-primary badge-xs"></span>
+        ````
+        ````xml
+        <!-- Normal Size badge-->
+        <span class="badge badge-primary"></span>
+        ````
+        ````xml
+        <!-- Medium Size badge-->
+        <span class="badge badge-primary badge-md"></span>
+        ````
+        ````xml
+        <!-- Large Size badge-->
+        <span class="badge badge-primary badge-lg"></span>
+        ````
+        ````xml
+        <!-- Xl Size badge-->
+        <span class="badge badge-primary badge-xl"></span>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <!-- Xs Size badge-->
+        <span className="badge badge-primary badge-xs"></span>
+        ````
+        ````xml
+        <!-- Normal Size badge-->
+        <span className="badge badge-primary"></span>
+        ````
+        ````xml
+        <!-- Medium Size badge-->
+        <span className="badge badge-primary badge-md"></span>
+        ````
+        ````xml
+        <!-- Large Size badge-->
+        <span className="badge badge-primary badge-lg"></span>
+        ````
+        ````xml
+        <!-- Xl Size badge-->
+        <span className="badge badge-primary badge-xl"></span>
+        ````
+    </TabItem>
+</Tabs>

@@ -1,5 +1,5 @@
 .alert {
-    @apply flex gap-4 p-4 my-4;
+    @apply flex gap-4 p-4 my-4 items-center;
       & > div {
           @apply ml-auto;
       }

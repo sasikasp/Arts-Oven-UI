@@ -1,10 +1,13 @@
 ---
 ---
-<div class="py-6">
-    <span>Change theme</span>
-    <div class="flex space-x-4">
-        <button data-set-theme="light" data-act-class="ACTIVECLASS">Light</button>
-        <button data-set-theme="dark" data-act-class="ACTIVECLASS">Dark</button>
-        <button data-set-theme="marble" data-act-class="ACTIVECLASS">Marble</button>
+<div class="dropdown dropdown-hover dropdown-end">
+    <div class="btn" tabindex="0">
+        Theme</div>
+    <div class="dropdown-menu w-56">
+        <div class="py-2">
+            <a href="#" data-set-theme="light" data-act-class="active" class="block px-4 py-2 hover:bg-gray-100">Light</a>
+            <a href="#" data-set-theme="dark" data-act-class="active" class="block px-4 py-2 hover:bg-gray-100">Dark</a>
+            <a href="#" data-set-theme="marble" data-act-class="active" class="block px-4 py-2 hover:bg-gray-100">Marble</a>
+        </div>
     </div>
 </div>

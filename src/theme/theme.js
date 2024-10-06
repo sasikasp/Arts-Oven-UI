@@ -50,17 +50,23 @@ module.exports = {
         colorScheme: 'light',
         primaryColor: '#294C84',
         secondaryColor: '#ED6FB4',
+        accentColor: '#294C84',
+
         infoColor: '#27A7E6',
         warningColor: '#EDC56F',
         successColor: '#55BD69',
         errorColor: '#E75F63',
-        borderRadius: '10px',
+
         baseColor100: '#FFFFFF',
         baseColor200: '#E0E8ED',
         baseColor300: '#CDD5DB',
-        colorLight: '#FFFFFF',
-        colorDark: '#171C30',
-        borderColor: '#CDD5DB',
+
+        backgroundColor: '#F2F8FC',
+        foregroundColor: '#0D181C',
+
+        colorText: '#0D181C',
+        colorTextInverse: '#FFFFFF',
+        borderRadius: '10px',
         btnBorderRadius: '999px',
     }
     // Add more themes as needed

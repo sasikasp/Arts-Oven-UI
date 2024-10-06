@@ -131,6 +131,51 @@ Buttons are essential UI elements that trigger actions when clicked. The Arts Ov
     </TabItem>
 </Tabs>
 
+### Wide Button
+
+<Card>
+    <div class="space-x-4 text-center">
+        <button type="button" class="btn btn-wide">Sign Up</button>
+        <button type="button" class="btn btn-wide btn-secondary">Login</button>
+    </div>
+</Card>
+
+<Tabs>
+    <TabItem label="HTML">
+        ````xml
+        <button type="button" class="btn btn-wide">Sign Up</button>
+        <button type="button" class="btn btn-wide btn-secondary">Login</button>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <button type="button" className="btn btn-wide">Sign Up</button>
+        <button type="button" className="btn btn-wide btn-secondary">Login</button>
+        ````
+    </TabItem>
+</Tabs>
+
+### Button Block
+
+<Card>
+    <div class="space-x-4 text-center">
+        <button type="button" class="btn btn-warning block w-full">Wide</button>
+    </div>
+</Card>
+
+<Tabs>
+    <TabItem label="HTML">
+        ````xml
+        <button type="button" class="btn btn-warning block w-full">Wide</button>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <button type="button" className="btn btn-warning block w-full">Wide</button>
+        ````
+    </TabItem>
+</Tabs>
+
 ## Adding Shadows and Gradients
 
 You can enhance your buttons with shadows and gradients by enabling these features in your `tailwind.config` configuration:

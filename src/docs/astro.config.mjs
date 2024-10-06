@@ -8,10 +8,14 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
     integrations: [starlight({
-        title: 'Documentation',
+        title: 'Arts Oven UI',
         social: {
             github: 'https://github.com/withastro/starlight',
         },
+        components: {
+            ThemeSelect: '../docs/src/components/ThemeSelect.astro'
+        },
+        customCss: ['./src/style/custom.css'],
         sidebar: [
             {
                 label: 'Getting Start',
@@ -22,6 +26,10 @@ export default defineConfig({
                     { label: 'Download', slug: 'guides/download' },
                     { label: 'Contribute', slug: 'guides/contribute' },
                 ],
+            },
+            {
+                label: 'Elements',
+                autogenerate: { directory: 'elements' },
             },
             {
                 label: 'Components',

@@ -22,6 +22,6 @@ export default {
 	},
 	plugins: [require('artsovenui')],
 	artsovenui: {
-		//
+		themes: ['light', 'dark', 'marble'],
 	}
 }

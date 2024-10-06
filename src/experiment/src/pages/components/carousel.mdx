@@ -1,0 +1,476 @@
+---
+layout: ../../layouts/docLayout.astro
+title: Card
+description: Buttons Component Documentation
+---
+
+import Card from '../../components/Card.astro'
+import TabItem from '../../components/TabItem.astro'
+import Tabs from '../../components/Tabs.astro'
+
+### Carousel
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="carousel rounded-xl">
+                <div class="carousel-item h-80">
+                    <img
+                        src="https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=2600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Image" />
+                </div>
+                <div class="carousel-item h-80">
+                    <img
+                        src="https://images.unsplash.com/photo-1479030160180-b1860951d696?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Image" />
+                </div>
+                <div class="carousel-item h-80">
+                    <img
+                        src="https://images.unsplash.com/photo-1515984977862-1c7201ef324d?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Image" />
+                </div>
+                <div class="carousel-item h-80">
+                    <img
+                        src="https://images.unsplash.com/photo-1517911122989-a8bcd823bed3?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Image" />
+                </div>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <div class="carousel">
+            <div class="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1670995982270-b892c06054c5?q=80&w=3987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <div class="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1558975355-84703f540cf6?q=80&w=3712&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <!-- Add more items here -->
+        </div>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <div className="carousel">
+            <div className="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1670995982270-b892c06054c5?q=80&w=3987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <div className="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1558975355-84703f540cf6?q=80&w=3712&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <!-- Add more items here -->
+        </div>
+        ````
+    </TabItem>
+</Tabs>
+
+### Snap to Start
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex justify-center">
+                <div class="carousel rounded-xl carousel-start w-full">
+                    <div class="carousel-item h-80">
+                        <img
+                            src="https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=2600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Image" />
+                    </div>
+                    <div class="carousel-item h-80">
+                        <img
+                            src="https://images.unsplash.com/photo-1479030160180-b1860951d696?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Image" />
+                    </div>
+                    <div class="carousel-item h-80">
+                        <img
+                            src="https://images.unsplash.com/photo-1515984977862-1c7201ef324d?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Image" />
+                    </div>
+                    <div class="carousel-item h-80">
+                        <img
+                            src="https://images.unsplash.com/photo-1517911122989-a8bcd823bed3?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Image" />
+                    </div>
+                </div>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <div class="carousel carousel-vertical h-80">
+            <div class="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1670995982270-b892c06054c5?q=80&w=3987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <div class="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1558975355-84703f540cf6?q=80&w=3712&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <!-- Add more items here -->
+        </div>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <div className="carousel carousel-vertical h-80">
+            <div className="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1670995982270-b892c06054c5?q=80&w=3987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <div className="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1558975355-84703f540cf6?q=80&w=3712&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <!-- Add more items here -->
+        </div>
+        ````
+    </TabItem>
+</Tabs>
+
+### Snap to Center
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex justify-center">
+                <div class="carousel rounded-xl carousel-center w-full">
+                    <div class="carousel-item h-80">
+                        <img
+                            src="https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=2600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Image" />
+                    </div>
+                    <div class="carousel-item h-80">
+                        <img
+                            src="https://images.unsplash.com/photo-1479030160180-b1860951d696?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Image" />
+                    </div>
+                    <div class="carousel-item h-80">
+                        <img
+                            src="https://images.unsplash.com/photo-1515984977862-1c7201ef324d?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Image" />
+                    </div>
+                    <div class="carousel-item h-80">
+                        <img
+                            src="https://images.unsplash.com/photo-1517911122989-a8bcd823bed3?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Image" />
+                    </div>
+                </div>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <div class="carousel carousel-vertical h-80">
+            <div class="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1670995982270-b892c06054c5?q=80&w=3987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <div class="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1558975355-84703f540cf6?q=80&w=3712&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <!-- Add more items here -->
+        </div>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <div className="carousel carousel-vertical h-80">
+            <div className="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1670995982270-b892c06054c5?q=80&w=3987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <div className="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1558975355-84703f540cf6?q=80&w=3712&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <!-- Add more items here -->
+        </div>
+        ````
+    </TabItem>
+</Tabs>
+
+### Snap to End
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex justify-center">
+                <div class="carousel rounded-xl carousel-end w-full">
+                    <div class="carousel-item h-80">
+                        <img
+                            src="https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=2600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Image" />
+                    </div>
+                    <div class="carousel-item h-80">
+                        <img
+                            src="https://images.unsplash.com/photo-1479030160180-b1860951d696?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Image" />
+                    </div>
+                    <div class="carousel-item h-80">
+                        <img
+                            src="https://images.unsplash.com/photo-1515984977862-1c7201ef324d?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Image" />
+                    </div>
+                    <div class="carousel-item h-80">
+                        <img
+                            src="https://images.unsplash.com/photo-1517911122989-a8bcd823bed3?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Image" />
+                    </div>
+                </div>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <div class="carousel carousel-vertical h-80">
+            <div class="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1670995982270-b892c06054c5?q=80&w=3987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <div class="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1558975355-84703f540cf6?q=80&w=3712&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <!-- Add more items here -->
+        </div>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <div className="carousel carousel-vertical h-80">
+            <div className="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1670995982270-b892c06054c5?q=80&w=3987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <div className="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1558975355-84703f540cf6?q=80&w=3712&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <!-- Add more items here -->
+        </div>
+        ````
+    </TabItem>
+</Tabs>
+
+### Carousel Fit Content
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex justify-center">
+                <div class="carousel rounded-xl w-80">
+                    <div class="carousel-item w-80">
+                        <img
+                            src="https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=2600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Image" />
+                    </div>
+                    <div class="carousel-item w-80">
+                        <img
+                            src="https://images.unsplash.com/photo-1479030160180-b1860951d696?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Image" />
+                    </div>
+                    <div class="carousel-item w-80">
+                        <img
+                            src="https://images.unsplash.com/photo-1515984977862-1c7201ef324d?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Image" />
+                    </div>
+                    <div class="carousel-item w-80">
+                        <img
+                            src="https://images.unsplash.com/photo-1517911122989-a8bcd823bed3?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Image" />
+                    </div>
+                </div>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <div class="carousel carousel-vertical h-80">
+            <div class="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1670995982270-b892c06054c5?q=80&w=3987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <div class="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1558975355-84703f540cf6?q=80&w=3712&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <!-- Add more items here -->
+        </div>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <div className="carousel carousel-vertical h-80">
+            <div className="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1670995982270-b892c06054c5?q=80&w=3987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <div className="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1558975355-84703f540cf6?q=80&w=3712&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <!-- Add more items here -->
+        </div>
+        ````
+    </TabItem>
+</Tabs>
+
+### Carousel Vertical
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex justify-center">
+                <div class="carousel rounded-xl carousel-vertical h-80">
+                    <div class="carousel-item h-80">
+                        <img
+                            src="https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=2600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Image" />
+                    </div>
+                    <div class="carousel-item h-80">
+                        <img
+                            src="https://images.unsplash.com/photo-1479030160180-b1860951d696?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Image" />
+                    </div>
+                    <div class="carousel-item h-80">
+                        <img
+                            src="https://images.unsplash.com/photo-1515984977862-1c7201ef324d?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Image" />
+                    </div>
+                    <div class="carousel-item h-80">
+                        <img
+                            src="https://images.unsplash.com/photo-1517911122989-a8bcd823bed3?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Image" />
+                    </div>
+                </div>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <div class="carousel carousel-vertical h-80">
+            <div class="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1670995982270-b892c06054c5?q=80&w=3987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <div class="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1558975355-84703f540cf6?q=80&w=3712&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <!-- Add more items here -->
+        </div>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <div className="carousel carousel-vertical h-80">
+            <div className="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1670995982270-b892c06054c5?q=80&w=3987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <div className="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1558975355-84703f540cf6?q=80&w=3712&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <!-- Add more items here -->
+        </div>
+        ````
+    </TabItem>
+</Tabs>
+
+### Bleeded Items
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex justify-center">
+                <div class="carousel carousel-bleeded w-full space-x-6">
+                    <div class="carousel-item w-80">
+                        <img
+                            src="https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=2600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Image" />
+                    </div>
+                    <div class="carousel-item w-80">
+                        <img
+                            src="https://images.unsplash.com/photo-1479030160180-b1860951d696?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Image" />
+                    </div>
+                    <div class="carousel-item w-80">
+                        <img
+                            src="https://images.unsplash.com/photo-1515984977862-1c7201ef324d?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Image" />
+                    </div>
+                    <div class="carousel-item w-80">
+                        <img
+                            src="https://images.unsplash.com/photo-1517911122989-a8bcd823bed3?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Image" />
+                    </div>
+                </div>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <div class="carousel carousel-vertical h-80">
+            <div class="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1670995982270-b892c06054c5?q=80&w=3987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <div class="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1558975355-84703f540cf6?q=80&w=3712&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <!-- Add more items here -->
+        </div>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <div className="carousel carousel-vertical h-80">
+            <div className="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1670995982270-b892c06054c5?q=80&w=3987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <div className="carousel-item h-80">
+                <img
+                    src="https://images.unsplash.com/photo-1558975355-84703f540cf6?q=80&w=3712&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image" />
+            </div>
+            <!-- Add more items here -->
+        </div>
+        ````
+    </TabItem>
+</Tabs>

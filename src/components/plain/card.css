@@ -9,7 +9,7 @@
     }
 
     .card-body {
-        @apply p-10;
+        @apply p-10 w-full;
         .card-title {
             @apply text-2xl font-semibold mb-4;
         }

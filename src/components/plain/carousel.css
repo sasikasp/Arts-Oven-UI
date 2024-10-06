@@ -18,4 +18,7 @@
     &-end .carousel-item {
         scroll-snap-align: end;
     }
+    &-bleeded .carousel-item {
+        border-radius: var(--bleeded-carousel-border-radius, 0.75rem);
+    }
 }

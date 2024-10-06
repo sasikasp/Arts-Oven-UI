@@ -48,18 +48,18 @@ module.exports = {
     },
     marble: {
         colorScheme: 'light',
-        primaryColor: '#294C84',
-        secondaryColor: '#ED6FB4',
-        accentColor: '#294C84',
+        primaryColor: '#01569E',
+        secondaryColor: '#2C3941',
+        accentColor: '#FF812D',
 
         infoColor: '#27A7E6',
-        warningColor: '#EDC56F',
-        successColor: '#55BD69',
-        errorColor: '#E75F63',
+        warningColor: '#F0BE49',
+        successColor: '#39BC52',
+        errorColor: '#F65446',
 
         baseColor100: '#FFFFFF',
-        baseColor200: '#E0E8ED',
-        baseColor300: '#CDD5DB',
+        baseColor200: '#DCE6EC',
+        baseColor300: '#C8D1D7',
 
         backgroundColor: '#F2F8FC',
         foregroundColor: '#0D181C',

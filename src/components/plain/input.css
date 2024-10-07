@@ -5,12 +5,14 @@
     border-radius: var(--input-border-radius, var(--btn-border-radius, var(--border-radius, 0.75rem)));
     background-color: var(--input-background-color, transparent);
     border: var(--input-border-width, 1px) solid;
-    border-color: var(--input-border-color, var(--input-border-color, var(--color-border)));
     &:valid {
         border-color: var(--input-border-color, var(--input-border-color, var(--color-border)));
     }
     &:invalid {
-        border-color: var(--input-error-border-color, var(--color-error));
+        border-color: var(--input-invalid-color, var(--color-error));
+    }
+    &:required {
+        border-color: var(--input-required-color, var(--input-border-color, var(--color-border)));
     }
 }
 

@@ -86,7 +86,3 @@ ul:not(aside ul):not(starlight-tabs ul) {
         @apply py-2 list-disc;
     }
 }
-
-.form-input:required {
-    @apply bg-base-100;
-}

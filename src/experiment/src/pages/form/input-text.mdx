@@ -61,8 +61,8 @@ The **Text Input** component is an essential part of any form, allowing users to
         <Card>
             <div class="flex justify-center">
                 <input type="email" class="form-input" placeholder="email@example.com"/>
-                <span></span>
             </div>
+            <span class="block mt-2 text-sm pl-4">email@example.com</span>
         </Card>
     </TabItem>
     <TabItem label="HTML">
@@ -73,6 +73,29 @@ The **Text Input** component is an essential part of any form, allowing users to
     <TabItem label="JSX">
         ````xml
         <input type="email" className="form-input" placeholder="email@example.com"/>
+        ````
+    </TabItem>
+</Tabs>
+
+## URL Input
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex justify-center">
+                <input type="url" class="form-input" placeholder="Website link"/>
+            </div>
+            <span class="block mt-2 text-sm pl-4">https://website.com</span>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <input type="url" class="form-input" placeholder="Website link"/>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <input type="url" className="form-input" placeholder="Website link"/>
         ````
     </TabItem>
 </Tabs>
@@ -111,8 +134,10 @@ The **Text Input** component is an essential part of any form, allowing users to
     <TabItem label="Preview">
         <Card>
             <div class="space-y-4">
-                <input type="text" class="form-input border-success" placeholder="First Name"/>
-                <input type="text" class="form-input border-error" placeholder="First Name"/>
+                <form action="" novalidate>
+                    <input type="text" required class="form-input border-success" placeholder="First Name"/>
+                    <input type="text" class="form-input border-error" placeholder="First Name"/>
+                </form>
             </div>
         </Card>
     </TabItem>

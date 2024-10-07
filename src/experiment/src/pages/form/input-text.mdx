@@ -61,6 +61,7 @@ The **Text Input** component is an essential part of any form, allowing users to
         <Card>
             <div class="flex justify-center">
                 <input type="email" class="form-input" placeholder="email@example.com"/>
+                <span></span>
             </div>
         </Card>
     </TabItem>
@@ -82,20 +83,51 @@ The **Text Input** component is an essential part of any form, allowing users to
     <TabItem label="Preview">
         <Card>
             <div class="space-y-4">
-                <input type="email" class="form-input input-sm" placeholder="email@example.com"/>
-                <input type="email" class="form-input" placeholder="email@example.com"/>
-                <input type="email" class="form-input input-lg" placeholder="email@example.com"/>
+                <input type="text" class="form-input input-sm" placeholder="First Name"/>
+                <input type="text" class="form-input" placeholder="First Name"/>
+                <input type="text" class="form-input input-lg" placeholder="First Name"/>
             </div>
         </Card>
     </TabItem>
     <TabItem label="HTML">
         ````xml
-        <input type="email" class="form-input" placeholder="email@example.com"/>
+        <input type="text" class="form-input input-sm" placeholder="First Name"/>
+        <input type="text" class="form-input" placeholder="First Name"/>
+        <input type="text" class="form-input input-lg" placeholder="First Name"/>
         ````
     </TabItem>
     <TabItem label="JSX">
         ````xml
-        <input type="email" className="form-input" placeholder="email@example.com"/>
+        <input type="text" className="form-input input-sm" placeholder="First Name"/>
+        <input type="text" className="form-input" placeholder="First Name"/>
+        <input type="text" className="form-input input-lg" placeholder="First Name"/>
+        ````
+    </TabItem>
+</Tabs>
+
+## Validation
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="space-y-4">
+                <input type="text" class="form-input border-success" placeholder="First Name"/>
+                <input type="text" class="form-input border-error" placeholder="First Name"/>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <input type="text" class="form-input input-sm" placeholder="First Name"/>
+        <input type="text" class="form-input" placeholder="First Name"/>
+        <input type="text" class="form-input input-lg" placeholder="First Name"/>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <input type="text" className="form-input input-sm" placeholder="First Name"/>
+        <input type="text" className="form-input" placeholder="First Name"/>
+        <input type="text" className="form-input input-lg" placeholder="First Name"/>
         ````
     </TabItem>
 </Tabs>

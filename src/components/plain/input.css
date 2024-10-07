@@ -3,8 +3,14 @@
     placeholder-slate-400 text-sm sm:text-base w-full appearance-none;
     padding: var(--input-padding-y, .5rem) var(--input-padding-x, 1rem);
     border-radius: var(--input-border-radius, var(--btn-border-radius, var(--border-radius, 0.75rem)));
-    border: var(--input-border-width, 1px) solid var(--input-border-color, var(--color-border, #cccccc));
     background-color: var(--input-background-color, transparent);
+    border: var(--input-border-width, 1px) solid;
+    &:valid {
+        border-color: var(--input-border-color, var(--input-border-color, var(--color-border)));
+    }
+    &:invalid {
+        border-color: var(--input-error-border-color, var(--color-error));
+    }
 }
 
 .input-sm {

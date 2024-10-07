@@ -582,6 +582,29 @@ The size of avatars is highly customizable using Tailwind CSS utility classes fo
     </TabItem>
 </Tabs>
 
+## Customizing with CSS Variables
+
+You can customize the avatar size by using [Tailwind CSS](https://tailwindcss.com/docs/size#fixed-sizes) utility classes like `w-`, `h-`, and `size-`. This allows you to easily adjust the dimensions of the avatar to meet your design needs without the need for additional styles.
+
+```xml
+<div class="avatar size-10">
+   <!-- Other elements -->
+</div>
+```
+
+You can customize the appearance of the component using following CSS variables.
+
+```css
+:root {
+    /* Avatar border width */
+    --avatar-border-width: 4px;
+    /* Avatar border color */
+    --avatar-border-color: #FFFFFF;
+}
+```
+
+<p>Refer to the <a href="/getting-start/customizations">Customization Guide</a> to learn more about how to use these variables to customize the components.</p>
+
 ## Adding Shadows and Gradients
 
 You can enhance your buttons with shadows and gradients by enabling these features in your `tailwind.config` configuration:
@@ -592,7 +615,6 @@ artsovenui: {
     gradients: true,
 },
 ```
+### Contribute ideas!
 
-## Conclusion
-
-The Buttons component in the Arts Oven UI Component Library provides a flexible and easy-to-use solution for creating interactive elements in your applications. Explore the various styles and customization options to create buttons that fit your design needs perfectly! For more components and detailed documentation, refer to our main documentation page.
+[Share Your Ideas!](https://discord.gg/uxjA3Utq) While we can't guarantee that every request will be added, we will definitely consider your suggestions for future updates.

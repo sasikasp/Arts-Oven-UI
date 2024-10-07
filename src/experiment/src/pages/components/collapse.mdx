@@ -1,0 +1,192 @@
+---
+layout: ../../layouts/docLayout.astro
+title: Collapse
+description: Collapse Component Documentation
+---
+
+import Card from '../../components/Card.astro'
+import TabItem from '../../components/TabItem.astro'
+import Tabs from '../../components/Tabs.astro'
+
+The Collapse component in the Arts Oven UI Component Library is designed to toggle the visibility of content sections, allowing users to expand or collapse content as needed. This component is ideal for organizing complex information and enhancing user experience by keeping interfaces clean and manageable.
+
+## Details & summery Collapse
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <details class="collapse-box">
+                <summary class="collapse-label">Toggle Collapse</summary>
+                <div class="collapse-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi aperiam assumenda beatae
+                        corporis culpa et, impedit ipsa ipsum iure labore laudantium molestias neque numquam odio porro,
+                        quod vero voluptates!</p>
+                </div>
+            </details>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <details class="collapse-box">
+            <summary class="collapse-label">Toggle Collapse</summary>
+            <div class="collapse-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi aperiam assumenda beatae
+                    corporis culpa et, impedit ipsa ipsum iure labore laudantium molestias neque numquam odio porro,
+                    quod vero voluptates!</p>
+            </div>
+        </details>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <details className="collapse-box">
+            <summary className="collapse-label">Toggle Collapse</summary>
+            <div className="collapse-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi aperiam assumenda beatae
+                    corporis culpa et, impedit ipsa ipsum iure labore laudantium molestias neque numquam odio porro,
+                    quod vero voluptates!</p>
+            </div>
+        </details>
+        ````
+    </TabItem>
+</Tabs>
+
+## Checkbox Collapse
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="collapse-box">
+                <input type="checkbox"/>
+                <span class="collapse-label">Some text here</span>
+                <div class="collapse-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae
+                        consequatur, corporis debitis dolorem est eveniet id incidunt ipsum itaque iure nesciunt odio odit
+                        omnis porro quam sint tenetur ut.</p>
+                </div>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <div class="collapse-box">
+            <input type="checkbox"/>
+            <span class="collapse-label">Some text here</span>
+            <div class="collapse-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae
+                    consequatur, corporis debitis dolorem est eveniet id incidunt ipsum itaque iure nesciunt odio odit
+                    omnis porro quam sint tenetur ut.</p>
+            </div>
+        </div>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <div className="collapse-box">
+            <input type="checkbox"/>
+            <span className="collapse-label">Some text here</span>
+            <div className="collapse-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae
+                    consequatur, corporis debitis dolorem est eveniet id incidunt ipsum itaque iure nesciunt odio odit
+                    omnis porro quam sint tenetur ut.</p>
+            </div>
+        </div>
+        ````
+    </TabItem>
+</Tabs>
+
+## Multiple Collapse
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <details class="collapse-box">
+                <summary class="collapse-label">Toggle Collapse</summary>
+                <div class="collapse-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi aperiam assumenda beatae
+                        corporis culpa et, impedit ipsa ipsum iure labore laudantium molestias neque numquam odio porro,
+                        quod vero voluptates!</p>
+                </div>
+            </details>
+            <details class="collapse-box">
+                <summary class="collapse-label">Toggle Collapse</summary>
+                <div class="collapse-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi aperiam assumenda beatae
+                        corporis culpa et, impedit ipsa ipsum iure labore laudantium molestias neque numquam odio porro,
+                        quod vero voluptates!</p>
+                </div>
+            </details>
+            <details class="collapse-box">
+                <summary class="collapse-label">Toggle Collapse</summary>
+                <div class="collapse-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi aperiam assumenda beatae
+                        corporis culpa et, impedit ipsa ipsum iure labore laudantium molestias neque numquam odio porro,
+                        quod vero voluptates!</p>
+                </div>
+            </details>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <details class="collapse-box">
+            <summary class="collapse-label">Toggle Collapse</summary>
+            <div class="collapse-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi aperiam assumenda beatae
+                    corporis culpa et, impedit ipsa ipsum iure labore laudantium molestias neque numquam odio porro,
+                    quod vero voluptates!</p>
+            </div>
+        </details>
+        <details class="collapse-box">
+            <summary class="collapse-label">Toggle Collapse</summary>
+            <div class="collapse-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi aperiam assumenda beatae
+                    corporis culpa et, impedit ipsa ipsum iure labore laudantium molestias neque numquam odio porro,
+                    quod vero voluptates!</p>
+            </div>
+        </details>
+        <!-- Add more here -->
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <details className="collapse-box">
+            <summary className="collapse-label">Toggle Collapse</summary>
+            <div className="collapse-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi aperiam assumenda beatae
+                    corporis culpa et, impedit ipsa ipsum iure labore laudantium molestias neque numquam odio porro,
+                    quod vero voluptates!</p>
+            </div>
+        </details>
+        <details className="collapse-box">
+            <summary className="collapse-label">Toggle Collapse</summary>
+            <div className="collapse-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi aperiam assumenda beatae
+                    corporis culpa et, impedit ipsa ipsum iure labore laudantium molestias neque numquam odio porro,
+                    quod vero voluptates!</p>
+            </div>
+        </details>
+        <!-- Add more here -->
+        ````
+    </TabItem>
+</Tabs>
+
+## Customizing with CSS Variables
+
+You can customize the appearance of the collapse component using following CSS variables.
+
+```css
+:root {
+   /* To change border width */
+   --collapse-border-width: 1px;
+   /* To change border style */
+   --collapse-border-style: solid;
+   /* To change border color */
+   --collapse-border-color: #f1f1f1;
+}
+```
+
+Refer to the [Customization Guide](/getting-start/customizations) to learn more about how to use these variables to customize the components.
+
+### Contribute ideas!
+
+[Share Your Ideas!](https://discord.gg/uxjA3Utq) While we can't guarantee that every request will be added, we will definitely consider your suggestions for future updates.

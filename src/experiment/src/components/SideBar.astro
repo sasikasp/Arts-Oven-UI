@@ -2,7 +2,7 @@
 
 ---
 
-<aside class="sidebar bg-base-100 w-64 fixed hidden md:block top-0 bottom-0 z-1 border-r border-base-200">
+<aside class="sidebar bg-base-100 w-64 fixed hidden md:block top-0 bottom-0 z-1 border-r border-base-200 h-screen overflow-y-scroll pb-10">
 
     <details class="collapse-box border-none mb-0 mt-20" open>
         <summary class="collapse-label flex items-center gap-2">
@@ -14,7 +14,7 @@
             <ul>
                 <li><a href="/elements/button" class="py-1 block hover:text-gray-300">Quick Start</a></li>
                 <li><a href="/elements/avatar" class="py-1 block hover:text-gray-300">Configure</a></li>
-                <li><a href="/elements/avatar" class="py-1 block hover:text-gray-300">Customizations</a></li>
+                <li><a href="/getting-start/customizations" class="py-1 block hover:text-gray-300">Customizations</a></li>
                 <li><a href="/elements/avatar" class="py-1 block hover:text-gray-300">Contribute</a></li>
                 <li><a href="/elements/avatar" class="py-1 block hover:text-gray-300">Release Notes</a></li>
             </ul>
@@ -25,7 +25,7 @@
     <!--    <li><a href="#" class="px-4 py-2 block hover:text-gray-300">Dashboard</a></li>-->
     <!--</ul>-->
 
-    <details class="collapse-box border-none my-0" open>
+    <details class="collapse-box border-none my-0">
         <summary class="collapse-label flex items-center gap-2">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10 4.5V18C10 19.08 9.55999 20.07 8.85999 20.79L8.82001 20.83C8.73001 20.92 8.63001 21.01 8.54001 21.08C8.24001 21.34 7.89999 21.54 7.54999 21.68C7.43999 21.73 7.33 21.77 7.22 21.81C6.83 21.94 6.41 22 6 22C5.73 22 5.46001 21.97 5.20001 21.92C5.07001 21.89 4.94 21.86 4.81 21.82C4.65 21.77 4.50001 21.72 4.35001 21.65C4.35001 21.64 4.35 21.64 4.34 21.65C4.06 21.51 3.79001 21.35 3.54001 21.16L3.53 21.15C3.4 21.05 3.28001 20.95 3.17001 20.83C3.06001 20.71 2.95 20.59 2.84 20.46C2.65 20.21 2.49001 19.94 2.35001 19.66C2.36001 19.65 2.36001 19.65 2.35001 19.65C2.35001 19.65 2.35 19.64 2.34 19.63C2.28 19.49 2.22999 19.34 2.17999 19.19C2.13999 19.06 2.10999 18.93 2.07999 18.8C2.02999 18.54 2 18.27 2 18V4.5C2 3 3 2 4.5 2H7.5C9 2 10 3 10 4.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -43,7 +43,7 @@
         </div>
     </details>
 
-    <details class="collapse-box border-none my-0" open>
+    <details class="collapse-box border-none my-0">
         <summary class="collapse-label flex items-center gap-2">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13.4298 15H4.39985C2.57985 15 1.41985 13.05 2.29985 11.45L4.62985 7.21L6.80985 3.24C7.71985 1.59 10.0998 1.59 11.0098 3.24L13.1998 7.21L14.2498 9.12001L15.5298 11.45C16.4098 13.05 15.2498 15 13.4298 15Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -59,6 +59,29 @@
                 <li><a href="/components/breadcrumb" class="py-1 block hover:text-gray-300">Breadcrumb</a></li>
                 <li><a href="/components/card" class="py-1 block hover:text-gray-300">Card</a></li>
                 <li><a href="/components/carousel" class="py-1 block hover:text-gray-300">Carousel</a></li>
+                <li><a href="/components/collapse" class="py-1 block hover:text-gray-300">Collapse</a></li>
+                <li><a href="/components/dropdown" class="py-1 block hover:text-gray-300">Dropdown</a></li>
+            </ul>
+        </div>
+    </details>
+
+    <details class="collapse-box border-none my-0" open>
+        <summary class="collapse-label flex items-center gap-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.4298 15H4.39985C2.57985 15 1.41985 13.05 2.29985 11.45L4.62985 7.21L6.80985 3.24C7.71985 1.59 10.0998 1.59 11.0098 3.24L13.1998 7.21L14.2498 9.12001L15.5298 11.45C16.4098 13.05 15.2498 15 13.4298 15Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 15.5C22 19.09 19.09 22 15.5 22C11.91 22 9 19.09 9 15.5C9 15.33 9.01 15.17 9.02 15H13.43C15.25 15 16.41 13.05 15.53 11.45L14.25 9.12C14.65 9.04 15.07 9 15.5 9C19.09 9 22 11.91 22 15.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Form</summary>
+        <div class="collapse-content border-l border-l-[currentColor] ml-7">
+            <ul>
+                <li><a href="/form/input-text" class="py-1 block hover:text-gray-300">Input text</a></li>
+                <li><a href="/form/input-group" class="py-1 block hover:text-gray-300">Input group</a></li>
+                <li><a href="/form/select" class="py-1 block hover:text-gray-300">Select</a></li>
+                <li><a href="/form/textarea" class="py-1 block hover:text-gray-300">Textarea</a></li>
+                <li><a href="/form/radio" class="py-1 block hover:text-gray-300">Radio</a></li>
+                <li><a href="/form/checkbox" class="py-1 block hover:text-gray-300">Checkbox</a></li>
+                <li><a href="/form/switch" class="py-1 block hover:text-gray-300">Switch</a></li>
+                <li><a href="/form/file-upload" class="py-1 block hover:text-gray-300">File Upload</a></li>
             </ul>
         </div>
     </details>

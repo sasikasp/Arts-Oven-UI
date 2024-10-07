@@ -2,6 +2,6 @@
     @apply flex items-center;
 
     & > .avatar > img {
-        @apply border border-base-100 border-4;
+        border: var(--avatar-border-width, 4px) solid var(--avatar-border-color, var(--color-base-100));
     }
 }

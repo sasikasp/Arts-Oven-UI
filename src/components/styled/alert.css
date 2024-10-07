@@ -1,9 +1,9 @@
 .alert {
     & {
         background-color: var(--alert-color, var(--color-base-100));
-        color: var(--alert-text, var(--color-text));
-        border: var(--alert-border-width, 1px) solid var(--color-border, var(--alert-color));
-        border-radius: var(--border-radius, 0.375rem);
+        color: var(--alert-text-color, var(--alert-text, var(--color-text)));
+        border: var(--alert-border, none);
+        border-radius: var(--alert-border-radius, 0.375rem);
         &-primary {
             --alert-color: var(--color-primary);
             --alert-text: var(--alert-primary-text-color, #FFFFFF);
@@ -32,37 +32,37 @@
         &-outline {
             & {
                 --alert-color: transparent;
-                --color-border: var(--color-text);
+                --alert-border: var(--alert-border-size) solid var(--color-text);
                 --alert-text: var(--color-text)
             }
             &-primary {
                 --alert-color: transparent;
-                --color-border: var(--color-primary);
+                --alert-border: var(--alert-border-size) solid var(--color-primary);
                 --alert-text: var(--color-primary)
             }
             &-secondary {
                 --alert-color: transparent;
-                --color-border: var(--color-secondary);
+                --alert-border: var(--alert-border-size) solid var(--color-secondary);
                 --alert-text: var(--color-secondary)
             }
             &-info {
                 --alert-color: transparent;
-                --color-border: var(--color-info);
-                --alert-text: var(--color-info)
+                --alert-border: var(--alert-border-size) solid var(--color-info);
+                --alert-border: var(--alert-border-size) solid var(--color-info)
             }
             &-warning {
                 --alert-color: transparent;
-                --color-border: var(--color-warning);
+                --alert-border: var(--alert-border-size) solid var(--color-warning);
                 --alert-text: var(--color-warning)
             }
             &-success {
                 --alert-color: transparent;
-                --color-border: var(--color-success);
+                --alert-border: var(--alert-border-size) solid var(--color-success);
                 --alert-text: var(--color-success)
             }
             &-error {
                 --alert-color: transparent;
-                --color-border: var(--color-error);
+                --alert-border: var(--alert-border-size) solid var(--color-error);
                 --alert-text: var(--color-error)
             }
 

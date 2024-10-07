@@ -8,11 +8,15 @@
 }
 
 .input-sm {
-    @apply py-1 px-2 text-xs;
+    --input-padding-y: var(--input-padding-y-sm, .25rem);
+    --input-padding-x: var(--input-padding-x-sm, .5rem);
+    @apply text-xs;
 }
 
 .input-lg {
-    @apply py-3 px-6 text-lg;
+    --input-padding-y: var(--input-padding-y-lg, .75rem);
+    --input-padding-x: var(--input-padding-x-lg, 1.5rem);
+    @apply text-lg;
 }
 
 /* Hide the input field */

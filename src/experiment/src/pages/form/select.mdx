@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/docLayout.astro
-title: Text Input
-description: Text Input Element Documentation
+title: Select Input
+description: Select Input Element Documentation
 ---
 
 import Card from '../../components/Card.astro'
@@ -16,18 +16,27 @@ The **Text Input** component is an essential part of any form, allowing users to
     <TabItem label="Preview">
         <Card>
             <div class="flex justify-center">
-                <input type="text" class="form-input" placeholder="First Name"/>
+                <select class="form-input">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
             </div>
         </Card>
     </TabItem>
     <TabItem label="HTML">
         ````xml
-        <input type="text" class="form-input" placeholder="First Name"/>
+        <select class="form-input">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
         ````
     </TabItem>
     <TabItem label="JSX">
         ````xml
-        <input type="text" className="form-input" placeholder="First Name"/>
+        <select class="form-input">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
         ````
     </TabItem>
 </Tabs>

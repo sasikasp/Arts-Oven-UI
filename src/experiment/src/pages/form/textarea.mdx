@@ -1,0 +1,33 @@
+---
+layout: ../../layouts/docLayout.astro
+title: Textarea Group
+description: Textarea Component Documentation
+---
+
+import Card from '../../components/Card.astro'
+import TabItem from '../../components/TabItem.astro'
+import Tabs from '../../components/Tabs.astro'
+
+The Text Area component allows users to input multi-line text, making it ideal for longer responses such as comments, messages, or descriptions.
+
+## Textarea
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex lg:w-1/2 mx-auto justify-center">
+                <textarea class="form-input" name="description" id="description" rows="5" placeholder="Description"></textarea>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <textarea class="form-input" name="description" id="description" rows="5" placeholder="Description"></textarea>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <textarea className="form-input" name="description" id="description" rows="5" placeholder="Description"></textarea>
+        ````
+    </TabItem>
+</Tabs>

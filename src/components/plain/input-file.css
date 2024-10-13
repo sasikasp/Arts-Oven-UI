@@ -1,0 +1,20 @@
+.form-file-custom input[type="file"] {
+    @apply absolute size-0.5 overflow-hidden border-0;
+    clip: rect(0, 0, 0, 0);
+}
+.form-file-custom {
+    @apply inline-flex gap-2 px-4 py-2 bg-secondary text-white rounded-xl cursor-pointer;
+}
+
+.form-file {
+    @apply block focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500
+    placeholder-slate-400 text-sm sm:text-base w-full appearance-none;
+    padding: var(--input-padding-y, .5rem) var(--input-padding-x, 1rem);
+    border-radius: var(--input-border-radius, var(--btn-border-radius, var(--border-radius, 0.75rem)));
+    background-color: var(--input-background-color, transparent);
+    border: var(--input-border-width, 1px) solid var(--input-border-color, var(--input-border-color, var(--color-border)));
+
+    &::-webkit-file-upload-button {
+        @apply bg-base-200 border-none text-[var(--color-text)] mr-4 px-4 py-1 rounded-xl;
+    }
+}

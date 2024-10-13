@@ -1,0 +1,128 @@
+---
+layout: ../../layouts/docLayout.astro
+title: Tooltip
+description: Tooltip Component Documentation
+---
+
+import Card from '../../components/Card.astro'
+import TabItem from '../../components/TabItem.astro'
+import Tabs from '../../components/Tabs.astro'
+
+The Tooltip component is a user interface element that provides additional information about a UI element when a user hovers over, focuses on, or taps that element.
+
+## Tooltip
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex items-center justify-center">
+                <a href="#" class="tooltip" data-tooltip="This is tip">I'm a link</a>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <a href="#" class="tooltip" data-tooltip="This is tip">I'm a link</a>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <a href="#" className="tooltip" data-tooltip="This is tip">I'm a link</a>
+        ````
+    </TabItem>
+</Tabs>
+
+You can customize the tooltip text by editing the `data-tooltip` attribute
+
+## Tooltip Bottom
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex items-center justify-center">
+                <a href="#" class="tooltip tooltip-bottom" data-tooltip="This is tip">I'm a link</a>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <a href="#" class="tooltip tooltip-bottom" data-tooltip="This is tip">I'm a link</a>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <a href="#" className="tooltip tooltip-bottom" data-tooltip="This is tip">I'm a link</a>
+        ````
+    </TabItem>
+</Tabs>
+
+## Tooltip Left
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex items-center justify-center">
+                <a href="#" class="tooltip tooltip-left" data-tooltip="This is tip">I'm a link</a>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <a href="#" class="tooltip tooltip-left" data-tooltip="This is tip">I'm a link</a>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <a href="#" className="tooltip tooltip-left" data-tooltip="This is tip">I'm a link</a>
+        ````
+    </TabItem>
+</Tabs>
+
+## Tooltip Right
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex items-center justify-center">
+                <a href="#" class="tooltip tooltip-right" data-tooltip="This is tip">I'm a link</a>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <a href="#" class="tooltip tooltip-right" data-tooltip="This is tip">I'm a link</a>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <a href="#" className="tooltip tooltip-right" data-tooltip="This is tip">I'm a link</a>
+        ````
+    </TabItem>
+</Tabs>
+
+## Tooltip Branding
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex flex-col gap-6 items-center justify-center">
+                <a href="#" class="tooltip btn btn-primary tooltip-primary" data-tooltip="This is tip">Primary</a>
+                <a href="#" class="tooltip btn btn-secondary tooltip-secondary tooltip-left" data-tooltip="This is tip">Secondary</a>
+                <a href="#" class="tooltip btn btn-info tooltip-info tooltip-right" data-tooltip="This is tip">Info</a>
+                <a href="#" class="tooltip btn btn-warning tooltip-warning tooltip-left" data-tooltip="This is tip">Warning</a>
+                <a href="#" class="tooltip btn btn-success tooltip-success tooltip-right" data-tooltip="This is tip">Success</a>
+                <a href="#" class="tooltip btn btn-error tooltip-error tooltip-bottom" data-tooltip="This is tip">Error</a>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <a href="#" class="tooltip tooltip-right" data-tooltip="This is tip">I'm a link</a>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <a href="#" className="tooltip tooltip-right" data-tooltip="This is tip">I'm a link</a>
+        ````
+    </TabItem>
+</Tabs>

@@ -1,0 +1,265 @@
+---
+layout: ../../layouts/docLayout.astro
+title: Tab
+description: Tab Component Documentation
+---
+
+import Card from '../../components/Card.astro'
+import TabItem from '../../components/TabItem.astro'
+import Tabs from '../../components/Tabs.astro'
+
+The Tab component is a user interface element that allows users to switch between different views or sections of content within the same space.
+
+## Tabs Plain
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex items-center justify-center">
+                <div class="tabs" role="tablist">
+                    <button class="tab" aria-controls="panel-1" id="tab-1" tabindex="0">
+                        First Tab
+                    </button>
+                    <button class="tab active" aria-controls="panel-2" id="tab-2" tabindex="-1">
+                        Second Tab
+                    </button>
+                    <button class="tab" aria-controls="panel-3" id="tab-3" tabindex="-1">
+                        Third Tab
+                    </button>
+                </div>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <div class="tabs" role="tablist">
+            <button class="tab" aria-controls="panel-1" id="tab-1" tabindex="0">
+                First Tab
+            </button>
+            <button class="tab active" aria-controls="panel-2" id="tab-2" tabindex="-1">
+                Second Tab
+            </button>
+            <button class="tab" aria-controls="panel-3" id="tab-3" tabindex="-1">
+                Third Tab
+            </button>
+        </div>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <div className="tabs" role="tablist">
+            <button className="tab" aria-controls="panel-1" id="tab-1" tabindex="0">
+                First Tab
+            </button>
+            <button className="tab active" aria-controls="panel-2" id="tab-2" tabindex="-1">
+                Second Tab
+            </button>
+            <button className="tab" aria-controls="panel-3" id="tab-3" tabindex="-1">
+                Third Tab
+            </button>
+        </div>
+        ````
+    </TabItem>
+</Tabs>
+
+## Tabs bordered
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex items-center justify-center">
+                <div class="tabs tabs-border" role="tablist">
+                    <button class="tab" aria-controls="panel-1" id="tab-1" tabindex="0">
+                        First Tab
+                    </button>
+                    <button class="tab active" aria-controls="panel-2" id="tab-2" tabindex="-1">
+                        Second Tab
+                    </button>
+                    <button class="tab" aria-controls="panel-3" id="tab-3" tabindex="-1">
+                        Third Tab
+                    </button>
+                </div>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <div class="tabs tabs-border" role="tablist">
+            <button class="tab" aria-controls="panel-1" id="tab-1" tabindex="0">
+                First Tab
+            </button>
+            <button class="tab active" aria-controls="panel-2" id="tab-2" tabindex="-1">
+                Second Tab
+            </button>
+            <button class="tab" aria-controls="panel-3" id="tab-3" tabindex="-1">
+                Third Tab
+            </button>
+        </div>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <div className="tabs tabs-border" role="tablist">
+            <button className="tab" aria-controls="panel-1" id="tab-1" tabindex="0">
+                First Tab
+            </button>
+            <button className="tab active" aria-controls="panel-2" id="tab-2" tabindex="-1">
+                Second Tab
+            </button>
+            <button className="tab" aria-controls="panel-3" id="tab-3" tabindex="-1">
+                Third Tab
+            </button>
+        </div>
+        ````
+    </TabItem>
+</Tabs>
+
+## Tabs buttoned
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="tabs tabs-button" role="tablist">
+                <button class="tab" aria-controls="panel-1" id="tab-1" tabindex="0">
+                    First Tab
+                </button>
+                <button class="tab active" aria-controls="panel-2" id="tab-2" tabindex="-1">
+                    Second Tab
+                </button>
+                <button class="tab" aria-controls="panel-3" id="tab-3" tabindex="-1">
+                    Third Tab
+                </button>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <div class="tabs tabs-button" role="tablist">
+            <button class="tab" aria-controls="panel-1" id="tab-1" tabindex="0">
+                First Tab
+            </button>
+            <button class="tab active" aria-controls="panel-2" id="tab-2" tabindex="-1">
+                Second Tab
+            </button>
+            <button class="tab" aria-controls="panel-3" id="tab-3" tabindex="-1">
+                Third Tab
+            </button>
+        </div>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <div className="tabs tabs-button" role="tablist">
+            <button className="tab" aria-controls="panel-1" id="tab-1" tabindex="0">
+                First Tab
+            </button>
+            <button className="tab active" aria-controls="panel-2" id="tab-2" tabindex="-1">
+                Second Tab
+            </button>
+            <button className="tab" aria-controls="panel-3" id="tab-3" tabindex="-1">
+                Third Tab
+            </button>
+        </div>
+        ````
+    </TabItem>
+</Tabs>
+
+## Tabs Uplift
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="tabs tabs-uplift" role="tablist">
+                <button class="tab" aria-controls="panel-1" id="tab-1" tabindex="0">
+                    First Tab
+                </button>
+                <button class="tab active" aria-controls="panel-2" id="tab-2" tabindex="-1">
+                    Second Tab
+                </button>
+                <button class="tab" aria-controls="panel-3" id="tab-3" tabindex="-1">
+                    Third Tab
+                </button>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <div class="tabs tabs-uplift" role="tablist">
+            <button class="tab" aria-controls="panel-1" id="tab-1" tabindex="0">
+                First Tab
+            </button>
+            <button class="tab active" aria-controls="panel-2" id="tab-2" tabindex="-1">
+                Second Tab
+            </button>
+            <button class="tab" aria-controls="panel-3" id="tab-3" tabindex="-1">
+                Third Tab
+            </button>
+        </div>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <div className="tabs tabs-uplift" role="tablist">
+            <button className="tab" aria-controls="panel-1" id="tab-1" tabindex="0">
+                First Tab
+            </button>
+            <button className="tab active" aria-controls="panel-2" id="tab-2" tabindex="-1">
+                Second Tab
+            </button>
+            <button className="tab" aria-controls="panel-3" id="tab-3" tabindex="-1">
+                Third Tab
+            </button>
+        </div>
+        ````
+    </TabItem>
+</Tabs>
+
+## Tabs Box
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="tabs tabs-box" role="tablist">
+                <button class="tab" aria-controls="panel-1" id="tab-1" tabindex="0">
+                    First Tab
+                </button>
+                <button class="tab active" aria-controls="panel-2" id="tab-2" tabindex="-1">
+                    Second Tab
+                </button>
+                <button class="tab" aria-controls="panel-3" id="tab-3" tabindex="-1">
+                    Third Tab
+                </button>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <div class="tabs tabs-box" role="tablist">
+            <button class="tab" aria-controls="panel-1" id="tab-1" tabindex="0">
+                First Tab
+            </button>
+            <button class="tab active" aria-controls="panel-2" id="tab-2" tabindex="-1">
+                Second Tab
+            </button>
+            <button class="tab" aria-controls="panel-3" id="tab-3" tabindex="-1">
+                Third Tab
+            </button>
+        </div>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <div className="tabs tabs-box" role="tablist">
+            <button className="tab" aria-controls="panel-1" id="tab-1" tabindex="0">
+                First Tab
+            </button>
+            <button className="tab active" aria-controls="panel-2" id="tab-2" tabindex="-1">
+                Second Tab
+            </button>
+            <button className="tab" aria-controls="panel-3" id="tab-3" tabindex="-1">
+                Third Tab
+            </button>
+        </div>
+        ````
+    </TabItem>
+</Tabs>

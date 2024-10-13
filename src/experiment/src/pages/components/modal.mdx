@@ -1,0 +1,74 @@
+---
+layout: ../../layouts/docLayout.astro
+title: Modal
+description: Modal Component Documentation
+---
+
+import Card from '../../components/Card.astro'
+import TabItem from '../../components/TabItem.astro'
+import Tabs from '../../components/Tabs.astro'
+
+The Modal component is a versatile UI element used to create dialogs, popovers, lightboxes, and other overlays that require user interaction.
+
+### Modal Box
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex items-center justify-center">
+                <a href="#modal" class="btn">Open Modal</a>
+            </div>
+
+                <div class="modal card" id="modal">
+                    <div class="card-body">
+                        <h2 class="card-title">Hello world!</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="card-footer justify-end">
+                            <a href="#" class="btn">Close</a>
+                            <button class="btn btn-primary">Continue</button>
+                        </div>
+                    </div>
+                </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <!-- Modal Button -->
+        <a href="#modal" class="btn">Open Modal</a>
+
+        <!-- Modal -->
+        <div class="modal card" id="modal">
+            <div class="card-body">
+                <h2 class="card-title">Hello world!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="card-footer justify-end">
+                    <a href="#" class="btn">Close</a>
+                    <button class="btn btn-primary">Continue</button>
+                </div>
+            </div>
+        </div>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <!-- Modal Button -->
+        <a href="#modal" className="btn">Open Modal</a>
+
+        <!-- Modal -->
+        <div className="modal card" id="modal">
+            <div className="card-body">
+                <h2 className="card-title">Hello world!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div className="card-footer justify-end">
+                    <a href="#" className="btn">Close</a>
+                    <button className="btn btn-primary">Continue</button>
+                </div>
+            </div>
+        </div>
+        ````
+    </TabItem>
+</Tabs>
+
+- You can customize the modal button by using the [Button component](/components/button).
+
+- The close button contains a link that resets the URL fragment (by linking to #), which effectively closes the modal.

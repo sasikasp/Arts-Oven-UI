@@ -1,0 +1,631 @@
+---
+layout: ../../layouts/docLayout.astro
+title: Table
+description: Table Component Documentation
+---
+
+import Card from '../../components/Card.astro'
+import TabItem from '../../components/TabItem.astro'
+import Tabs from '../../components/Tabs.astro'
+
+The Tab component is a user interface element that allows users to switch between different views or sections of content within the same space.
+
+## Regular Table
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex items-center justify-center">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Country</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>johndoe@example.com</td>
+                        <td>(123) 456-7890</td>
+                        <td>USA</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>janesmith@example.com</td>
+                        <td>(098) 765-4321</td>
+                        <td>UK</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Sam Wilson</td>
+                        <td>samwilson@example.com</td>
+                        <td>(111) 222-3333</td>
+                        <td>Canada</td>
+                    </tr>
+                    {/*Add more rows as needed*/}
+                    </tbody>
+                </table>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <table class="table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Country</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>johndoe@example.com</td>
+                <td>(123) 456-7890</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>janesmith@example.com</td>
+                <td>(098) 765-4321</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sam Wilson</td>
+                <td>samwilson@example.com</td>
+                <td>(111) 222-3333</td>
+                <td>Canada</td>
+            </tr>
+            <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <table className="table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Country</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>johndoe@example.com</td>
+                <td>(123) 456-7890</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>janesmith@example.com</td>
+                <td>(098) 765-4321</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sam Wilson</td>
+                <td>samwilson@example.com</td>
+                <td>(111) 222-3333</td>
+                <td>Canada</td>
+            </tr>
+            <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+        ````
+    </TabItem>
+</Tabs>
+
+## Table Heading
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex items-center justify-center">
+                <table class="table table-heading">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Country</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>johndoe@example.com</td>
+                        <td>(123) 456-7890</td>
+                        <td>USA</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>janesmith@example.com</td>
+                        <td>(098) 765-4321</td>
+                        <td>UK</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Sam Wilson</td>
+                        <td>samwilson@example.com</td>
+                        <td>(111) 222-3333</td>
+                        <td>Canada</td>
+                    </tr>
+                    {/*Add more rows as needed*/}
+                    </tbody>
+                </table>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <table class="table table-heading">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Country</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>johndoe@example.com</td>
+                <td>(123) 456-7890</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>janesmith@example.com</td>
+                <td>(098) 765-4321</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sam Wilson</td>
+                <td>samwilson@example.com</td>
+                <td>(111) 222-3333</td>
+                <td>Canada</td>
+            </tr>
+            <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <table className="table table-heading">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Country</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>johndoe@example.com</td>
+                <td>(123) 456-7890</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>janesmith@example.com</td>
+                <td>(098) 765-4321</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sam Wilson</td>
+                <td>samwilson@example.com</td>
+                <td>(111) 222-3333</td>
+                <td>Canada</td>
+            </tr>
+            <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+        ````
+    </TabItem>
+</Tabs>
+
+## Table Active
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex items-center justify-center">
+                <table class="table table-heading">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Country</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>johndoe@example.com</td>
+                        <td>(123) 456-7890</td>
+                        <td>USA</td>
+                    </tr>
+                    <tr class="is-active">
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>janesmith@example.com</td>
+                        <td>(098) 765-4321</td>
+                        <td>UK</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Sam Wilson</td>
+                        <td>samwilson@example.com</td>
+                        <td>(111) 222-3333</td>
+                        <td>Canada</td>
+                    </tr>
+                    {/*Add more rows as needed*/}
+                    </tbody>
+                </table>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <table class="table table-heading">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Country</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>johndoe@example.com</td>
+                <td>(123) 456-7890</td>
+                <td>USA</td>
+            </tr>
+            <tr class="is-active">
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>janesmith@example.com</td>
+                <td>(098) 765-4321</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sam Wilson</td>
+                <td>samwilson@example.com</td>
+                <td>(111) 222-3333</td>
+                <td>Canada</td>
+            </tr>
+            <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <table className="table table-heading">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Country</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>johndoe@example.com</td>
+                <td>(123) 456-7890</td>
+                <td>USA</td>
+            </tr>
+            <tr className="is-active">
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>janesmith@example.com</td>
+                <td>(098) 765-4321</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sam Wilson</td>
+                <td>samwilson@example.com</td>
+                <td>(111) 222-3333</td>
+                <td>Canada</td>
+            </tr>
+            <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+        ````
+    </TabItem>
+</Tabs>
+
+## Table hover
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex items-center justify-center">
+                <table class="table is-hover">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Country</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>johndoe@example.com</td>
+                        <td>(123) 456-7890</td>
+                        <td>USA</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>janesmith@example.com</td>
+                        <td>(098) 765-4321</td>
+                        <td>UK</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Sam Wilson</td>
+                        <td>samwilson@example.com</td>
+                        <td>(111) 222-3333</td>
+                        <td>Canada</td>
+                    </tr>
+                    {/*Add more rows as needed*/}
+                    </tbody>
+                </table>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <table class="table is-hover">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Country</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>johndoe@example.com</td>
+                <td>(123) 456-7890</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>janesmith@example.com</td>
+                <td>(098) 765-4321</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sam Wilson</td>
+                <td>samwilson@example.com</td>
+                <td>(111) 222-3333</td>
+                <td>Canada</td>
+            </tr>
+            <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <table className="table is-hover">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Country</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>johndoe@example.com</td>
+                <td>(123) 456-7890</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>janesmith@example.com</td>
+                <td>(098) 765-4321</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sam Wilson</td>
+                <td>samwilson@example.com</td>
+                <td>(111) 222-3333</td>
+                <td>Canada</td>
+            </tr>
+            <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+        ````
+    </TabItem>
+</Tabs>
+
+## Table Zebra
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex items-center justify-center">
+                <table class="table is-zebra">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Country</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>johndoe@example.com</td>
+                        <td>(123) 456-7890</td>
+                        <td>USA</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>janesmith@example.com</td>
+                        <td>(098) 765-4321</td>
+                        <td>UK</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Sam Wilson</td>
+                        <td>samwilson@example.com</td>
+                        <td>(111) 222-3333</td>
+                        <td>Canada</td>
+                    </tr>
+                    {/*Add more rows as needed*/}
+                    </tbody>
+                </table>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <table class="table is-zebra">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Country</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>johndoe@example.com</td>
+                <td>(123) 456-7890</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>janesmith@example.com</td>
+                <td>(098) 765-4321</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sam Wilson</td>
+                <td>samwilson@example.com</td>
+                <td>(111) 222-3333</td>
+                <td>Canada</td>
+            </tr>
+            <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <table className="table is-zebra">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Country</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>johndoe@example.com</td>
+                <td>(123) 456-7890</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>janesmith@example.com</td>
+                <td>(098) 765-4321</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sam Wilson</td>
+                <td>samwilson@example.com</td>
+                <td>(111) 222-3333</td>
+                <td>Canada</td>
+            </tr>
+            <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+        ````
+    </TabItem>
+</Tabs>

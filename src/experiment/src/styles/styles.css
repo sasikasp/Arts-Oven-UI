@@ -79,11 +79,10 @@ code:not(pre code) {
     background-size: 30px 30px;
 }
 
-ul:not(aside ul):not(starlight-tabs ul) {
+ul:not(aside ul):not(starlight-tabs ul):not(nav ul) {
     @apply pl-8;
 
     li {
         @apply py-2 list-disc;
     }
 }
-

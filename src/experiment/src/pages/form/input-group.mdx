@@ -1,0 +1,135 @@
+---
+layout: ../../layouts/docLayout.astro
+title: Input Group
+description: Input Group Component Documentation
+---
+
+import Card from '../../components/Card.astro'
+import TabItem from '../../components/TabItem.astro'
+import Tabs from '../../components/Tabs.astro'
+
+The Input Group component allows you to enhance form controls by adding text, buttons, or other elements alongside input fields.
+
+## Input Group
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex lg:w-1/2 mx-auto justify-center">
+                <div class="input-group">
+                    <span>@</span>
+                    <input type="email" class="form-input" placeholder="Email" />
+                </div>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <div class="input-group">
+            <span>@</span>
+            <input type="email" class="form-input" placeholder="Email" />
+        </div>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <div className="input-group">
+            <span>@</span>
+            <input type="email" className="form-input" placeholder="Email" />
+        </div>
+        ````
+    </TabItem>
+</Tabs>
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex lg:w-1/2 mx-auto justify-center">
+                <div class="input-group">
+                    <input type="email" class="form-input" placeholder="Price" />
+                        <span>LKR</span>
+                </div>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <div class="input-group">
+            <input type="email" class="form-input" placeholder="Price" />
+            <span>LKR</span>
+        </div>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <div className="input-group">
+            <input type="email" className="form-input" placeholder="Price" />
+            <span>LKR</span>
+        </div>
+        ````
+    </TabItem>
+</Tabs>
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex lg:w-1/2 mx-auto justify-center">
+                <div class="input-group">
+                    <span>LKR</span>
+                    <input type="email" class="form-input" placeholder="Price" />
+                        <span>.00</span>
+                </div>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <div class="input-group">
+            <span>LKR</span>
+            <input type="email" class="form-input" placeholder="Price" />
+            <span>.00</span>
+        </div>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <div className="input-group">
+            <span>LKR</span>
+            <input type="email" className="form-input" placeholder="Price" />
+            <span>.00</span>
+        </div>
+        ````
+    </TabItem>
+</Tabs>
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex lg:w-1/2 mx-auto justify-center">
+                <div class="input-group">
+                    <span>Rs.</span>
+                    <input type="email" class="form-input" placeholder="Price" />
+                        <button type="button" class="btn btn-outline">Check</button>
+                </div>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <div class="input-group">
+            <span>Rs.</span>
+            <input type="email" class="form-input" placeholder="Price" />
+                <button type="button" class="btn btn-outline">Check</button>
+        </div>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <div class="input-group">
+            <span>Rs.</span>
+            <input type="email" class="form-input" placeholder="Price" />
+                <button type="button" class="btn btn-outline">Check</button>
+        </div>
+        ````
+    </TabItem>
+</Tabs>

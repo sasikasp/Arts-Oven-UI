@@ -1,0 +1,102 @@
+---
+layout: ../../layouts/docLayout.astro
+title: Switch Group
+description: Switch Component Documentation
+---
+
+import Card from '../../components/Card.astro'
+import TabItem from '../../components/TabItem.astro'
+import Tabs from '../../components/Tabs.astro'
+
+The Switch component is a user interface element that allows users to toggle between two states, typically representing "on" and "off." It is commonly used in forms and settings for adjusting options quickly and intuitively.
+
+## Switch
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex lg:w-1/2 mx-auto justify-center">
+                <input type="checkbox" name="gender" class="form-switch" />
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <input type="checkbox" name="gender" class="form-switch" />
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <input type="checkbox" name="gender" className="form-switch" />
+        ````
+    </TabItem>
+</Tabs>
+
+## Switch with Label
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex lg:w-1/2 mx-auto gap-6 justify-center">
+                <div class="form-control">
+                    <input type="checkbox" name="gender" class="form-switch" />
+                    <label for="5g" class="form-label">5G</label>
+                </div>
+
+                <div class="form-control">
+                    <input type="checkbox" name="gender" class="form-switch" />
+                    <label for="blutooth" class="form-label">Bluetooth</label>
+                </div>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <div class="form-control">
+            <input type="checkbox" name="5g" id="5g" class="form-check" />
+            <label for="5g" class="form-label">5G</label>
+        </div>
+
+        <div class="form-control">
+            <input type="checkbox" name="blutooth" id="blutooth" class="form-check" />
+            <label for="blutooth" class="form-label">Bluetooth</label>
+        </div>
+
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <div className="form-control">
+            <input type="checkbox" name="5g" id="5g" className="form-check" />
+            <label for="5g" className="form-label">5G</label>
+        </div>
+
+        <div className="form-control">
+            <input type="checkbox" name="blutooth" id="blutooth" className="form-check" />
+            <label for="blutooth" className="form-label">Bluetooth</label>
+        </div>
+        ````
+    </TabItem>
+</Tabs>
+
+## Switch vertical
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex lg:w-1/2 mx-auto justify-center">
+                <input type="checkbox" name="gender" class="form-switch-vertical" />
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <input type="checkbox" name="gender" class="form-switch-vertical" />
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <input type="checkbox" name="gender" className="form-switch-vertical" />
+        ````
+    </TabItem>
+</Tabs>

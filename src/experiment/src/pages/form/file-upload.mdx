@@ -1,0 +1,145 @@
+---
+layout: ../../layouts/docLayout.astro
+title: File Upload Group
+description: File Upload Component Documentation
+---
+
+import Card from '../../components/Card.astro'
+import TabItem from '../../components/TabItem.astro'
+import Tabs from '../../components/Tabs.astro'
+
+The File Upload Input component allows users to select files from their device for uploading.
+
+## File input
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex lg:w-1/2 mx-auto justify-center">
+                <input class="form-file" type="file" accept=".jpg, .jpeg, .png, .svg, .webp" name="image" />
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <label class="form-file-custom">
+            <input type="file" accept=".jpg, .jpeg, .png, .svg, .webp" name="image" />
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.5 22H15.5C20.5 22 22.5 20 22.5 15V9C22.5 4 20.5 2 15.5 2H9.5C4.5 2 2.5 4 2.5 9V15C2.5 20 4.5 22 9.5 22Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.5 10C10.6046 10 11.5 9.10457 11.5 8C11.5 6.89543 10.6046 6 9.5 6C8.39543 6 7.5 6.89543 7.5 8C7.5 9.10457 8.39543 10 9.5 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.17001 18.9501L8.10001 15.6401C8.89001 15.1101 10.03 15.1701 10.74 15.7801L11.07 16.0701C11.85 16.7401 13.11 16.7401 13.89 16.0701L18.05 12.5001C18.83 11.8301 20.09 11.8301 20.87 12.5001L22.5 13.9001" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Thumbnail
+        </label>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <label className="form-file-custom">
+            <input type="file" accept=".jpg, .jpeg, .png, .svg, .webp" name="image" />
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.5 22H15.5C20.5 22 22.5 20 22.5 15V9C22.5 4 20.5 2 15.5 2H9.5C4.5 2 2.5 4 2.5 9V15C2.5 20 4.5 22 9.5 22Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.5 10C10.6046 10 11.5 9.10457 11.5 8C11.5 6.89543 10.6046 6 9.5 6C8.39543 6 7.5 6.89543 7.5 8C7.5 9.10457 8.39543 10 9.5 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.17001 18.9501L8.10001 15.6401C8.89001 15.1101 10.03 15.1701 10.74 15.7801L11.07 16.0701C11.85 16.7401 13.11 16.7401 13.89 16.0701L18.05 12.5001C18.83 11.8301 20.09 11.8301 20.87 12.5001L22.5 13.9001" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Thumbnail
+        </label>
+        ````
+    </TabItem>
+</Tabs>
+
+## Custom Image Upload
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex lg:w-1/2 mx-auto justify-center">
+                <label class="form-file-custom">
+                    <input type="file" accept=".jpg, .jpeg, .png, .svg, .webp" name="image" />
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.5 22H15.5C20.5 22 22.5 20 22.5 15V9C22.5 4 20.5 2 15.5 2H9.5C4.5 2 2.5 4 2.5 9V15C2.5 20 4.5 22 9.5 22Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.5 10C10.6046 10 11.5 9.10457 11.5 8C11.5 6.89543 10.6046 6 9.5 6C8.39543 6 7.5 6.89543 7.5 8C7.5 9.10457 8.39543 10 9.5 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.17001 18.9501L8.10001 15.6401C8.89001 15.1101 10.03 15.1701 10.74 15.7801L11.07 16.0701C11.85 16.7401 13.11 16.7401 13.89 16.0701L18.05 12.5001C18.83 11.8301 20.09 11.8301 20.87 12.5001L22.5 13.9001" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Thumbnail
+                </label>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <label class="form-file-custom">
+            <input type="file" accept=".jpg, .jpeg, .png, .svg, .webp" name="image" />
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.5 22H15.5C20.5 22 22.5 20 22.5 15V9C22.5 4 20.5 2 15.5 2H9.5C4.5 2 2.5 4 2.5 9V15C2.5 20 4.5 22 9.5 22Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.5 10C10.6046 10 11.5 9.10457 11.5 8C11.5 6.89543 10.6046 6 9.5 6C8.39543 6 7.5 6.89543 7.5 8C7.5 9.10457 8.39543 10 9.5 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.17001 18.9501L8.10001 15.6401C8.89001 15.1101 10.03 15.1701 10.74 15.7801L11.07 16.0701C11.85 16.7401 13.11 16.7401 13.89 16.0701L18.05 12.5001C18.83 11.8301 20.09 11.8301 20.87 12.5001L22.5 13.9001" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Thumbnail
+        </label>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <label className="form-file-custom">
+            <input type="file" accept=".jpg, .jpeg, .png, .svg, .webp" name="image" />
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.5 22H15.5C20.5 22 22.5 20 22.5 15V9C22.5 4 20.5 2 15.5 2H9.5C4.5 2 2.5 4 2.5 9V15C2.5 20 4.5 22 9.5 22Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.5 10C10.6046 10 11.5 9.10457 11.5 8C11.5 6.89543 10.6046 6 9.5 6C8.39543 6 7.5 6.89543 7.5 8C7.5 9.10457 8.39543 10 9.5 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.17001 18.9501L8.10001 15.6401C8.89001 15.1101 10.03 15.1701 10.74 15.7801L11.07 16.0701C11.85 16.7401 13.11 16.7401 13.89 16.0701L18.05 12.5001C18.83 11.8301 20.09 11.8301 20.87 12.5001L22.5 13.9001" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Thumbnail
+        </label>
+        ````
+    </TabItem>
+</Tabs>
+
+- You can use `accept` attribute to restricts the types of files that can be uploaded. (.jpg, .png...)
+
+- By using `multiple` attribute allows users to select more than one file at a time.
+
+## Custom File Upload
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex lg:w-1/2 mx-auto justify-center">
+                <label class="form-file-custom">
+                    <input type="file" name="image" />
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.0601 16.5V11.5" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.5 14H9.5" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 11V17C22 21 21 22 17 22H7C3 22 2 21 2 17V7C2 3 3 2 7 2H8.5C10 2 10.33 2.44 10.9 3.2L12.4 5.2C12.78 5.7 13 6 14 6H17C21 6 22 7 22 11Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/>
+                        </svg>
+                        Document
+                </label>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <label class="form-file-custom">
+            <input type="file" name="image" />
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.0601 16.5V11.5" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.5 14H9.5" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 11V17C22 21 21 22 17 22H7C3 22 2 21 2 17V7C2 3 3 2 7 2H8.5C10 2 10.33 2.44 10.9 3.2L12.4 5.2C12.78 5.7 13 6 14 6H17C21 6 22 7 22 11Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/>
+            </svg>
+            Document
+        </label>
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <label className="form-file-custom">
+            <input type="file" name="image" />
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.0601 16.5V11.5" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.5 14H9.5" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 11V17C22 21 21 22 17 22H7C3 22 2 21 2 17V7C2 3 3 2 7 2H8.5C10 2 10.33 2.44 10.9 3.2L12.4 5.2C12.78 5.7 13 6 14 6H17C21 6 22 7 22 11Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/>
+            </svg>
+            Document
+        </label>
+        ````
+    </TabItem>
+</Tabs>

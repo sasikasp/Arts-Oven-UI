@@ -5,3 +5,11 @@
 .form-label {
     @apply block pl-4 text-sm;
 }
+
+.form-control {
+    @apply flex items-center;
+}
+
+input[radio] + label, input[checkbox] + label {
+    @apply cursor-pointer;
+}

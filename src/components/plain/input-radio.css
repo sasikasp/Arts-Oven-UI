@@ -1,6 +1,6 @@
 .form-radio {
     @apply appearance-none border border-primary rounded-full size-6 cursor-pointer;
-}
+ }
 
 .form-radio:checked {
     @apply bg-primary;

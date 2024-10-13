@@ -10,12 +10,12 @@ import Tabs from '../../components/Tabs.astro'
 
 The **Text Input** component is an essential part of any form, allowing users to enter and edit text.
 
-## Text Input
+## Select
 
 <Tabs>
     <TabItem label="Preview">
         <Card>
-            <div class="flex justify-center">
+            <div class="flex lg:w-1/2 mx-auto justify-center">
                 <select class="form-input">
                     <option value="male">Male</option>
                     <option value="female">Female</option>
@@ -33,7 +33,7 @@ The **Text Input** component is an essential part of any form, allowing users to
     </TabItem>
     <TabItem label="JSX">
         ````xml
-        <select class="form-input">
+        <select className="form-input">
             <option value="male">Male</option>
             <option value="female">Female</option>
         </select>
@@ -41,83 +41,81 @@ The **Text Input** component is an essential part of any form, allowing users to
     </TabItem>
 </Tabs>
 
-## Number Input
+## Select + Option Labels
 
 <Tabs>
     <TabItem label="Preview">
         <Card>
-            <div class="flex justify-center">
-                <input type="number" class="form-input" placeholder="Quantity"/>
+            <div class="flex lg:w-1/2 mx-auto justify-center">
+                <select class="form-input">
+                    <optgroup label="Apple">
+                        <option value="13">I phone 13</option>
+                        <option value="14">I phone 14</option>
+                        <option value="15">I phone 15</option>
+                        <option value="16">I phone 16</option>
+                    </optgroup>
+                    <optgroup label="Samsung">
+                        <option value="20">Galaxy S-20</option>
+                        <option value="21">Galaxy S-21</option>
+                        <option value="23">Galaxy S-23</option>
+                        <option value="24">Galaxy S-24</option>
+                    </optgroup>
+                </select>
             </div>
         </Card>
     </TabItem>
     <TabItem label="HTML">
         ````xml
-        <input type="number" class="form-input" placeholder="Quantity"/>
+        <select class="form-input">
+            <optgroup label="Apple">
+                <option value="13">I phone 13</option>
+                <option value="14">I phone 14</option>
+                <!-- Other Options -->
+            </optgroup>
+            <optgroup label="Samsung">
+                <option value="20">Galaxy S-20</option>
+                <option value="21">Galaxy S-21</option>
+                <!-- Other Options -->
+            </optgroup>
+        </select>
         ````
     </TabItem>
     <TabItem label="JSX">
         ````xml
-        <input type="number" className="form-input" placeholder="Quantity"/>
+        <select className="form-input">
+            <optgroup label="Apple">
+                <option value="13">I phone 13</option>
+                <option value="14">I phone 14</option>
+                <!-- Other Options -->
+            </optgroup>
+            <optgroup label="Samsung">
+                <option value="20">Galaxy S-20</option>
+                <option value="21">Galaxy S-21</option>
+                <!-- Other Options -->
+            </optgroup>
+        </select>
         ````
     </TabItem>
 </Tabs>
 
-## Email Input
+## Select Sizes
 
 <Tabs>
     <TabItem label="Preview">
         <Card>
-            <div class="flex justify-center">
-                <input type="email" class="form-input" placeholder="email@example.com"/>
-            </div>
-            <span class="block mt-2 text-sm pl-4">email@example.com</span>
-        </Card>
-    </TabItem>
-    <TabItem label="HTML">
-        ````xml
-        <input type="email" class="form-input" placeholder="email@example.com"/>
-        ````
-    </TabItem>
-    <TabItem label="JSX">
-        ````xml
-        <input type="email" className="form-input" placeholder="email@example.com"/>
-        ````
-    </TabItem>
-</Tabs>
-
-## URL Input
-
-<Tabs>
-    <TabItem label="Preview">
-        <Card>
-            <div class="flex justify-center">
-                <input type="url" class="form-input" placeholder="Website link"/>
-            </div>
-            <span class="block mt-2 text-sm pl-4">https://website.com</span>
-        </Card>
-    </TabItem>
-    <TabItem label="HTML">
-        ````xml
-        <input type="url" class="form-input" placeholder="Website link"/>
-        ````
-    </TabItem>
-    <TabItem label="JSX">
-        ````xml
-        <input type="url" className="form-input" placeholder="Website link"/>
-        ````
-    </TabItem>
-</Tabs>
-
-## Input Sizes
-
-<Tabs>
-    <TabItem label="Preview">
-        <Card>
-            <div class="space-y-4">
-                <input type="text" class="form-input input-sm" placeholder="First Name"/>
-                <input type="text" class="form-input" placeholder="First Name"/>
-                <input type="text" class="form-input input-lg" placeholder="First Name"/>
+            <div class="space-y-4 lg:w-1/2 mx-auto">
+                <select class="form-input input-sm">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <select class="form-input">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <select class="form-input input-lg">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
             </div>
         </Card>
     </TabItem>
@@ -136,4 +134,3 @@ The **Text Input** component is an essential part of any form, allowing users to
         ````
     </TabItem>
 </Tabs>
-

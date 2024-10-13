@@ -7,7 +7,7 @@
     border: var(--input-border-width, 1px) solid var(--input-border-color, var(--input-border-color, var(--color-border)));
 }
 
-select.form-input {
+select.form-input, input[list] {
     background-image: linear-gradient(45deg, transparent 50%, currentColor 50%),
     linear-gradient(135deg, currentColor 50%, transparent 50%);
     background-position: calc(100% - 20px) calc(1px + 50%),
@@ -18,23 +18,10 @@ select.form-input {
 
 .input-sm {
     --input-padding-y: var(--input-padding-y-sm, .25rem);
-    --input-padding-x: var(--input-padding-x-sm, .5rem);
     @apply text-xs;
 }
 
 .input-lg {
     --input-padding-y: var(--input-padding-y-lg, .75rem);
-    --input-padding-x: var(--input-padding-x-lg, 1.5rem);
     @apply text-lg;
-}
-
-/* Hide the input field */
-.form-file input[type="file"] {
-    @apply absolute size-0.5 overflow-hidden border-0;
-    clip: rect(0, 0, 0, 0);
-}
-
-/* Style the label as a button */
-.form-file {
-    @apply inline-flex gap-2 px-4 py-2 bg-secondary text-white rounded-xl cursor-pointer;
 }

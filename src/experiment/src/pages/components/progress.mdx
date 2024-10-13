@@ -1,0 +1,126 @@
+---
+layout: ../../layouts/docLayout.astro
+title: Progress
+description: Progress Component Documentation
+---
+
+import Card from '../../components/Card.astro'
+import TabItem from '../../components/TabItem.astro'
+import Tabs from '../../components/Tabs.astro'
+
+The Progress component is a visual indicator used to show the status of an ongoing process, such as loading, uploading, or completing a task.
+
+## Progress
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex items-center justify-center">
+                <progress class="progress" value="50" max="100"></progress>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ````xml
+        <progress class="progress" value="50" max="100"></progress>ss
+        ````
+    </TabItem>
+    <TabItem label="JSX">
+        ````xml
+        <progress className="progress" value="50" max="100"></progress>
+        ````
+    </TabItem>
+</Tabs>
+
+## Progress Branding
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex flex-col gap-6 items-center justify-center">
+                <progress class="progress progress-primary" value="40" max="100"></progress>
+                <progress class="progress progress-secondary" value="20" max="100"></progress>
+                <progress class="progress progress-info" value="90" max="100"></progress>
+                <progress class="progress progress-warning" value="75" max="100"></progress>
+                <progress class="progress progress-success" value="85" max="100"></progress>
+                <progress class="progress progress-error" value="45" max="100"></progress>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ```xml
+        <progress class="progress progress-primary" value="40" max="100"></progress>
+        ```
+        ```xml
+        <progress class="progress progress-secondary" value="20" max="100"></progress>
+        ```
+        ```xml
+        <progress class="progress progress-info" value="90" max="100"></progress>
+        ```
+        ```xml
+        <progress class="progress progress-warning" value="75" max="100"></progress>
+        ```
+        ```xml
+        <progress class="progress progress-success" value="85" max="100"></progress>
+        ```
+        ```xml
+        <progress class="progress progress-error" value="45" max="100"></progress>
+        ```
+    </TabItem>
+    <TabItem label="JSX">
+        ```xml
+        <progress className="progress progress-primary" value="40" max="100"></progress>
+        ```
+        ```xml
+        <progress className="progress progress-secondary" value="20" max="100"></progress>
+        ```
+        ```xml
+        <progress className="progress progress-info" value="90" max="100"></progress>
+        ```
+        ```xml
+        <progress className="progress progress-warning" value="75" max="100"></progress>
+        ```
+        ```xml
+        <progress className="progress progress-success" value="85" max="100"></progress>
+        ```
+        ```xml
+        <progress className="progress progress-error" value="45" max="100"></progress>
+        ```
+    </TabItem>
+</Tabs>
+
+## Progress Sizes
+
+<Tabs>
+    <TabItem label="Preview">
+        <Card>
+            <div class="flex flex-col gap-6 items-center justify-center">
+                <progress class="progress" value="30" max="100"></progress>
+                <progress class="progress progress-primary h-3" value="40" max="100"></progress>
+                <progress class="progress progress-secondary h-4" value="20" max="100"></progress>
+            </div>
+        </Card>
+    </TabItem>
+    <TabItem label="HTML">
+        ```xml
+        <progress class="progress" value="30" max="100"></progress>
+        ```
+        ```xml
+        <progress class="progress progress-primary h-3" value="40" max="100"></progress>
+        ```
+        ```xml
+        <progress class="progress progress-secondary h-4" value="20" max="100"></progress>
+        ```
+    </TabItem>
+    <TabItem label="JSX">
+        ```xml
+        <progress className="progress" value="30" max="100"></progress>
+        ```
+        ```xml
+        <progress className="progress progress-primary h-3" value="40" max="100"></progress>
+        ```
+        ```xml
+        <progress className="progress progress-secondary h-4" value="20" max="100"></progress>
+        ```
+    </TabItem>
+</Tabs>

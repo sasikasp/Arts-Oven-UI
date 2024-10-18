@@ -32,37 +32,37 @@
         &-outline {
             & {
                 --alert-color: transparent;
-                --alert-border: var(--alert-border-size) solid var(--color-text);
+                --alert-border: var(--alert-border-size, 1px) solid var(--color-text);
                 --alert-text: var(--color-text)
             }
             &-primary {
                 --alert-color: transparent;
-                --alert-border: var(--alert-border-size) solid var(--color-primary);
+                --alert-border: var(--alert-border-size, 1px) solid var(--color-primary);
                 --alert-text: var(--color-primary)
             }
             &-secondary {
                 --alert-color: transparent;
-                --alert-border: var(--alert-border-size) solid var(--color-secondary);
+                --alert-border: var(--alert-border-size, 1px) solid var(--color-secondary);
                 --alert-text: var(--color-secondary)
             }
             &-info {
                 --alert-color: transparent;
-                --alert-border: var(--alert-border-size) solid var(--color-info);
-                --alert-border: var(--alert-border-size) solid var(--color-info)
+                --alert-border: var(--alert-border-size, 1px) solid var(--color-info);
+                --alert-text: var(--color-info)
             }
             &-warning {
                 --alert-color: transparent;
-                --alert-border: var(--alert-border-size) solid var(--color-warning);
+                --alert-border: var(--alert-border-size, 1px) solid var(--color-warning);
                 --alert-text: var(--color-warning)
             }
             &-success {
                 --alert-color: transparent;
-                --alert-border: var(--alert-border-size) solid var(--color-success);
+                --alert-border: var(--alert-border-size, 1px) solid var(--color-success);
                 --alert-text: var(--color-success)
             }
             &-error {
                 --alert-color: transparent;
-                --alert-border: var(--alert-border-size) solid var(--color-error);
+                --alert-border: var(--alert-border-size, 1px) solid var(--color-error);
                 --alert-text: var(--color-error)
             }
 

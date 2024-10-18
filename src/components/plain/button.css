@@ -1,21 +1,25 @@
 .btn {
     & {
-        @apply gap-2 px-6 py-2;
+        @apply gap-2 text-base;
+        padding: var(--btn-padding-y, .5rem) var(--btn-padding-x, 1.5rem);
 
         &-lg {
-            @apply text-lg px-8 py-3;
+            @apply text-lg;
+            padding: var(--btn-lg-padding-y, .75rem) var(--btn-lg-padding-x, 3rem);
         }
 
         &-sm {
-            @apply text-sm px-4 py-2;
+            @apply text-sm;
+            padding: var(--btn-sm-padding-y, .25rem) var(--btn-sm-padding-x, 1rem);
         }
 
         &-xs {
-            @apply text-xs px-3 py-1;
+            @apply text-xs;
+            padding: var(--btn-xs-padding-y, .15rem) var(--btn-xs-padding-x, .75rem);
         }
 
         &-wide {
-            @apply px-24 py-2;
+            padding: var(--btn-wide-padding-y, .5rem) var(--btn-wide-padding-x, 4rem);
         }
     }
 }

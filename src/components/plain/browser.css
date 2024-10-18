@@ -1,0 +1,22 @@
+.window {
+    @apply bg-base-200 rounded-xl;
+    .tile-bar {
+        @apply relative p-6 rounded-t-xl;
+
+        span:first-child {
+            @apply bg-error rounded-full size-3 absolute top-1/2 -translate-y-1/2 left-5;
+        }
+
+        span:not(:first-child):not(:last-child) {
+            @apply bg-warning rounded-full size-3 absolute top-1/2 -translate-y-1/2 left-10;
+        }
+
+        span:last-child {
+            @apply bg-success rounded-full size-3 absolute top-1/2 -translate-y-1/2 left-[3.8rem];
+        }
+    }
+
+    .window-content {
+        @apply p-6 bg-base-100 rounded-xl;
+    }
+}

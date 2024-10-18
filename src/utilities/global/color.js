@@ -8,4 +8,8 @@ module.exports = {
     "base-100": 'var(--color-base-100)',
     "base-200": 'var(--color-base-200)',
     "base-300": 'var(--color-base-300)',
+    "background": 'var(--color-background)',
+    "text": 'var(--color-text)',
+    "text-inverse": 'var(--color-text-inverse)',
+    "border": 'var(--color-border)',
 };

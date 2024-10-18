@@ -25,7 +25,7 @@ module.exports = {
     },
     dark: {
         colorScheme: 'dark',
-        primaryColor: '#ED6FB4',
+        primaryColor: '#E91176',
         secondaryColor: '#4662ff',
         accentColor: '#C95EE6',
 
@@ -67,7 +67,56 @@ module.exports = {
         colorText: '#0D181C',
         colorTextInverse: '#FFFFFF',
         borderRadius: '10px',
+        borderColor: '#cdd8e0',
         btnBorderRadius: '999px',
+    },
+    eco: {
+        colorScheme: 'dark',
+        primaryColor: '#408E1F',
+        secondaryColor: '#FC6736',
+        accentColor: '#172B36',
+
+        infoColor: '#27A7E6',
+        warningColor: '#F0BE49',
+        successColor: '#39BC52',
+        errorColor: '#F65446',
+
+        baseColor100: '#14231A',
+        baseColor200: '#1B2E1E',
+        baseColor300: '#223B1E',
+
+        backgroundColor: '#151A13',
+        foregroundColor: '#D9E8E3',
+
+        colorText: '#D9E8E3',
+        colorTextInverse: '#06180B',
+        borderRadius: '5px',
+        borderColor: '#223529',
+        btnBorderRadius: '5px',
+    },
+    vintage: {
+        colorScheme: 'light',
+        primaryColor: '#EB5503',
+        secondaryColor: '#211F1B',
+        accentColor: '#C71C00',
+
+        infoColor: '#27A7E6',
+        warningColor: '#F0BE49',
+        successColor: '#39BC52',
+        errorColor: '#F65446',
+
+        baseColor100: '#DFDECA',
+        baseColor200: '#CFCEB6',
+        baseColor300: '#B6B59C',
+
+        backgroundColor: '#EEEDDD',
+        foregroundColor: '#211F1B',
+
+        colorText: '#211F1B',
+        colorTextInverse: '#EEEDDD',
+        borderRadius: '0px',
+        borderColor: '#223529',
+        btnBorderRadius: '0px',
     }
     // Add more themes as needed
 };

@@ -1,0 +1,25 @@
+.link {
+    & {
+        @apply underline underline-offset-4 cursor-pointer;
+        color: var(--link-color, var(--color-text));
+
+        &-primary {
+            --link-color: var(--color-primary);
+        }
+        &-secondary {
+            --link-color: var(--color-secondary);
+        }
+        &-info {
+            --link-color: var(--color-info);
+        }
+        &-warning {
+            --link-color: var(--color-warning);
+        }
+        &-success {
+            --link-color: var(--color-success);
+        }
+        &-error {
+            --link-color: var(--color-error);
+        }
+    }
+}

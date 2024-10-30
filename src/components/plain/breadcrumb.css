@@ -2,6 +2,7 @@
     @apply flex space-x-1;
 
     .breadcrumb-item {
+        @apply list-none;
         a {
             @apply underline underline-offset-4 text-blue-500;
         }
@@ -15,5 +16,13 @@
             @apply text-slate-600 no-underline;
         }
     }
+}
+
+.divide-arrow {
+    --breadcrumb-icon: ">";
+}
+
+.divide-dot {
+    --breadcrumb-icon: "•";
 }
 

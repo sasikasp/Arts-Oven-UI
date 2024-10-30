@@ -14,8 +14,8 @@ function logMessage(label, message) {
     console.log(`╰─ ${picocolors.white(label)}  ${picocolors.dim(message)}`);
 }
 
-function myFunction({ addBase, addUtilities, addComponents, config }) {
-    const logs = config('artsovenui.logs') === true;
+function myFunction({ addBase, addComponents, config }) {
+    const logs = config && config('artsovenui.logs') === true;
 
     // Artsoven Version
     console.log(`🔥 ${picocolors.yellow("ArtsOven")} ${picocolors.dim(packageInfo.version)}`);

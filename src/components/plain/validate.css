@@ -1,0 +1,5 @@
+.is-valid {
+    &:invalid:is(:not(:placeholder-shown)) {
+        border-color: red;
+    }
+}

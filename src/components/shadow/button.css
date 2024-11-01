@@ -55,5 +55,9 @@
         &-outline-error {
             --color-shadow: var(--color-error);
         }
+
+        &-soft {
+            @apply hover:shadow-none;
+        }
     }
 }

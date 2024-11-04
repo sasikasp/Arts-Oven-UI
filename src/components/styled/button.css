@@ -2,13 +2,11 @@
     @apply duration-200 ease-out cursor-pointer;
     border-radius: var(--btn-border-radius, var(--border-radius, 0.375rem));
     border: var(--btn-border, none);
-
     &:active:hover,
     &:active:focus {
         animation: button-click 0s ease-out;
         transform: scale(var(--btn-focus-scale, 0.97));
     }
-
     & {
         /* Fallback */
         background-color: var(--color-btn, var(--color-base-100));
@@ -31,38 +29,31 @@
             --color-btn: var(--color-primary, #f1f1f1);
             --color-text: var(--btn-priamry-text-color, #ffffff);
         }
-
         &-secondary {
             --color-btn: var(--color-secondary, #f1f1f1);
             --color-text: var(--btn-secondary-text-color, #ffffff);
         }
-
         &-info {
             --color-btn: var(--color-info, #f1f1f1);
             --color-text: var(--btn-info-text-color, #ffffff);
         }
-
         &-warning {
             --color-btn: var(--color-warning, #f1f1f1);
             --color-text: var(--btn-warning-text-color, #ffffff);
         }
-
         &-success {
             --color-btn: var(--color-success, #f1f1f1);
             --color-text: var(--btn-success-text-color, #ffffff);
         }
-
         &-error {
             --color-btn: var(--color-error, #f1f1f1);
             --color-text: var(--btn-error-text-color, #ffffff);
         }
-
         &-soft {
             --color-precentage: 10%;
             --color-text: var(--color-btn, #ffffff);
             --color-precentage-hover: 20%;
         }
-
         &-3d {
             border-bottom: 4px solid color-mix(in oklab, var(--color-btn) 80%, black);
             &:active {

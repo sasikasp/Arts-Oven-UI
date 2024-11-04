@@ -7,7 +7,7 @@
   "homepage": "https://artsoven.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sasikaspsp/artsovenui"
+    "url": "git+https://github.com/sasikaspsp/artsovenui.git"
   },
   "bugs": {
     "url": "https://github.com/sasikasp/arts-oven-ui/issues"

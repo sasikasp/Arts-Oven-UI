@@ -1,6 +1,5 @@
 .avatar-group {
     @apply flex items-center;
-
     & > .avatar > img {
         border: var(--avatar-border-width, 4px) solid var(--avatar-border-color, var(--color-base-100));
     }

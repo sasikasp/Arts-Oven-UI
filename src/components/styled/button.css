@@ -75,7 +75,6 @@
                 --color-text: var(--color-light, #ffffff);
             }
         }
-
         &-primary {
             --color-btn: transparent;
             --color-text: var(--color-primary, #000000);
@@ -89,7 +88,6 @@
                 }
             }
         }
-
         &-secondary {
             --color-btn: transparent;
             --color-text: var(--color-secondary, #000000);

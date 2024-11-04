@@ -7,6 +7,9 @@ on:
 
 jobs:
   release:
+    permissions:
+      contents: write  # Allows the workflow to push tags
+
     runs-on: ubuntu-latest
 
     steps:
@@ -22,7 +25,8 @@ jobs:
       - name: Install dependencies
         run: npm install
         
-      - run: npm run build
+      - name: Build project
+        run: npm run build
 
       - name: Release
         env:

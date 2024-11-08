@@ -14,9 +14,9 @@
     }
 
     .dropdown-menu {
-        @apply absolute py-2 hidden min-w-full z-[1];
+        @apply absolute p-2 hidden min-w-full z-[1];
         a {
-            @apply block p-2 no-underline;
+            @apply block py-2 px-4 no-underline rounded-lg;
         }
     }
 

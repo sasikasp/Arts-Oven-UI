@@ -1,9 +1,7 @@
 .dropdown {
     .dropdown-menu {
-        border: var(--dropdown-border-width, 1px) solid var(--dropdown-border-color, var(--color-border));
         background-color: var(--dropdown-background-color, var(--color-base-100, #ffffff));
         border-radius: var(--dropdown-border-radius, var(--border-radius, none));
-
         a:hover {
             background-color: var(--dropdown-link-hover-bg, var(--color-base-200));
         }

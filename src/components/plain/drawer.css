@@ -1,0 +1,46 @@
+.drawer {
+    @apply min-h-full min-w-full;
+
+    &-side {
+        @apply w-0 px-0 z-20 space-y-3 transition-all duration-300 ease-in-out bg-base-100 fixed top-14 left-0 bottom-0 border-r border-base-200 h-[100%-3.5rem] overflow-y-scroll pb-4;
+
+        &:is(aside.drawer-side) {
+            @apply md:w-64 md:px-3;
+        }
+
+        ul {
+            li {
+                a {
+                    @apply px-3 py-2 block rounded-xl hover:bg-base-200;
+                }
+            }
+        }
+    }
+
+    &-toggle {
+        @apply hidden;
+    }
+
+    &-content {
+        @apply md:ml-64 p-6 transition-all duration-300 ease-in-out;
+    }
+
+    &-overlay {
+        @apply hidden bg-[black] size-full inset-0 fixed opacity-50;
+    }
+
+    &-toggle:checked {
+        &~ .drawer-overlay {
+            @apply block z-10;
+        }
+        &~ .drawer-side {
+            @apply w-64 px-3;
+        }
+    }
+
+    &-right {
+        .drawer-side {
+            @apply left-auto right-0;
+        }
+    }
+}

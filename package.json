@@ -1,6 +1,5 @@
 {
   "name": "artsovenui",
-  "version": "1.0.24",
   "description": "Arts Oven UI - Tailwind CSS Components",
   "author": "Occy Mac",
   "license": "MIT",
@@ -58,14 +57,7 @@
     "build": "npm run build:css && npm run build:js",
     "watch:css": "postcss src/styles/tailwind.css -o dist/artsoven-ui.css --watch",
     "watch:js": "rollup -c -w",
-    "watch": "npm run watch:css & npm run watch:js",
-    "docs": "cd src/docs && npm run dev",
-    "experiment": "cd src/experiment && npm run dev",
-    "release:patch": "node src/release.js --patch",
-    "release:minor": "node src/release.js --minor",
-    "release:major": "node src/release.js --major",
-    "release:premajor": "node src/release.js --premajor",
-    "release:prerelease": "node src/release.js --prerelease"
+    "watch": "npm run watch:css & npm run watch:js"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
@@ -79,7 +71,7 @@
     "rollup": "^4.22.4",
     "rollup-plugin-postcss": "^4.0.0",
     "semantic-release": "^24.2.0",
-    "tailwindcss": "^3.4.12"
+    "tailwindcss": "^3.4.13"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^6.0.0",

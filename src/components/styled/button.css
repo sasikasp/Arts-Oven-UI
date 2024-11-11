@@ -54,7 +54,7 @@
             --color-text: var(--color-btn, #ffffff);
             --color-precentage-hover: 20%;
         }
-        &-3d {
+        &-real {
             border-bottom: 4px solid color-mix(in oklab, var(--color-btn) 80%, black);
             &:active {
                 border-bottom: none;

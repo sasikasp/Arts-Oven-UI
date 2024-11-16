@@ -1,5 +1,5 @@
 .card {
-    @apply rounded-lg;
+    @apply rounded-lg p-4;
     box-shadow: oklch(0 0 0 / 0.07) 0px 20px 25px -5px, oklch(0 0 0 / 0.02) 0px 10px 10px -5px;
 
     :where(img:first-child) {

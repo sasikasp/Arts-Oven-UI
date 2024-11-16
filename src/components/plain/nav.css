@@ -1,21 +1,39 @@
 .navbar {
-    @apply bg-gray-800 px-4;
+    @apply bg-base-100 px-4 flex items-center justify-between w-full;
+    & {
+        &-fixed {
+            @apply fixed top-0 inset-x-0 z-10;
+        }
+        &-fixed-bottom {
+            @apply fixed bottom-0 inset-x-0 z-10;
+        }
 
-    div {
-        @apply flex justify-between items-center py-4;
-    }
-
-    .branding-logo {
-        @apply text-lg font-semibold text-white;
-    }
-
-    ul {
-        @apply flex;
-
-        li {
-            .nav-link {
-                @apply cursor-pointer py-1 px-4 inline-block hover:bg-slate-900 rounded-xl text-white hover:text-gray-400;
+        &-toggle {
+            @apply hidden;
+            &-btn {
+                @apply block md:hidden cursor-pointer;
             }
         }
+
+        &-content {
+            @apply hidden md:flex items-center;
+            ul {
+                @apply flex gap-4;
+                li {
+                    .nav-link {
+                        @apply cursor-pointer py-1 px-4 block md:inline-block hover:bg-base-200 rounded-xl;
+                    }
+                }
+            }
+        }
+
+        &-toggle:checked ~ .navbar-content {
+            @apply flex max-sm:absolute max-sm:top-20 max-sm:flex-col max-sm:bg-base-100 max-sm:p-4 max-sm:inset-x-0 max-sm:rounded-xl max-sm:mx-4;
+
+            ul {
+                @apply max-sm:flex-col max-sm:items-center;
+            }
+        }
+
     }
 }

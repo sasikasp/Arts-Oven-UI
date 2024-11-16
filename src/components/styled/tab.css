@@ -2,4 +2,5 @@
     .active {
         @apply font-semibold;
     }
+
 }
